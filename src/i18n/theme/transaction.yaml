@@ -3,13 +3,21 @@ transaction:
     completed:
       en: Validated
       fr: Validé
+      ru: Подтверждено
+      ua: Підтверджено
     cancelled:
       withdrawn:
         en: Withdrawn
         fr: Retiré
+        ru: Выведено
+        ua: Виведено
       refusedByOwner:
         en: Rejected
         fr: Rejeté
+        ru: Отклонено
+        ua: Відхилено
       refusedByTaker:
         en: Withdrawn
         fr: Retiré
+        ru: Выведено
+        ua: Виведено

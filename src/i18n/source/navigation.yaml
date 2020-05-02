@@ -2,59 +2,95 @@ navigation:
   home:
     en: Home
     fr: Accueil
+    ru: Главная
+    ua: Головна
   faq:
     en: FAQ
     fr: "Comment ça marche\_?"
+    ru: Часто задаваемые вопросы
+    ua: Поширені запитання
   new_listing:
     en: Publish your add
     fr: Publiez votre annonce
+    ru: Опубликуйте свое объявление
+    ua: Опублікуйте своє оголошення
   new_listing__EDITOR_LABEL:
     en: New listing link
     fr: Lien de publication d’annonce
+    ru: Ссылка на объявление
+    ua: Посилання оголошення
   contact_us:
     en: Contact us
     fr: Contactez-nous
+    ru: Связаться с нами
+    ua: Зв'язатися з нами
   about_us:
     en: About us
     fr: Qui sommes-nous ?
+    ru: О нас
+    ua: Про нас
   terms:
     en: Terms
     fr: Conditions Générales
+    ru: Условия
+    ua: Умови
   search:
     en: Search
     fr: Rechercher
+    ru: Поиск
+    ua: Пошук
     context: Action required to find assets
   back_top_of_page:
     en: Back to top
     fr: Retour en haut de page
+    ru: Вернуться к началу
+    ua: Повернутися до початку
   back:
     en: Back
     fr: Retour
+    ru: Назад
+    ua: Назад
     context: Back to previous view button
   close:
     en: Close
     fr: Fermer
+    ru: Закрыть
+    ua: Закрити
     context: Close current in-app window or context
   menu:
     en: Menu
     fr: Menu
+    ru: Меню
+    ua: Меню
     context: Navigation menu label
   account:
     en: Account
     fr: Mon compte
+    ru: Аккаунт
+    ua: Аккаунт
   invite:
     en: Invite
     fr: Parrainer
+    ru: Пригласить
+    ua: Запросити
   inbox:
     en: Inbox
     fr: Boîte de réception
+    ru: Входящие
+    ua: Вхідні 
   profile:
     en: Profile
     fr: Profil
+    ru: Профиль
+    ua: Профіль
     context: Can point to public profile or dedicated profile edition page as well.
   public_profile:
     en: Public profile
     fr: Profil public
+    ru: Публичный профиль
+    ua: Публічний профіль
   my_assets:
     en: My listings
     fr: Mes annonces
+    ru: Мои объявления
+    ua: Мої оголошення

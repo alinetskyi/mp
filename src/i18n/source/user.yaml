@@ -2,65 +2,107 @@ user:
   joined_in_month:
     en: Joined in {subscription_date, date, fullmonth}
     fr: Membre depuis {subscription_date, date, fullmonth}
+    ru: Присоединился {subscription_date, date, fullmonth}
+    ua: Приєднався {subscription_date, date, fullmonth}
   firstname_label:
     en: First name
     fr: Prénom
+    ru: Имя
+    ua: Ім'я
   lastname_label:
     en: Last name
     fr: Nom
+    ru: Фамилия
+    ua: Прізвище
   name_label:
     en: Name
     fr: Nom
+    ru: Название
+    ua: Назва
   organization_name_label:
     en: Organization name
     fr: Nom de l’organisation
+    ru: Название организации
+    ua: Назва організації
     context: Can be a business, NGO or any other institution
   user_type_label:
     en: Status
     fr: Statut
+    ru: Статус
+    ua: Статус
   user_type_individual:
     en: Individual
     fr: Particulier
+    ru: Физическое лицо
+    ua: Фізична особа
   user_type_organization:
     en: Organization
     fr: Professionnel
+    ru: Организация
+    ua: Організація
   select_user_group_helper:
     en: I am
     fr: Je suis
+    ru: Я
+    ua: Я
   provider_label:
     en: Provider
     fr: Fournisseur
+    ru: Поставщик
+    ua: Постачальник
   user_label:
     en: Consumer
     fr: Demandeur
+    ru: Потребитель
+    ua: Споживач
   organization_label:
     en: Organization name
     fr: Nom de l'organisation
+    ru: Название организации
+    ua: Назва організації
   date_of_birth_label:
     en: Date of birth
     fr: Date de naissance
+    ru: Дата рождения
+    ua: Дата народження
   phone_number_label:
     en: Phone number
     fr: Numéro de téléphone
+    ru: Номер телефона
+    ua: Номер телефону
   tax_id_label:
     en: Tax ID
     fr: Numéro de TVA
+    ru: Налоговый номер
+    ua: Податковий номер
   email_address_label:
     en: Email Address
     fr: Adresse Email
+    ru: Адрес электронной почты
+    ua: Адреса електронної пошти
   favorite_places_label:
     en: Favorite places
     fr: Lieux favoris
+    ru: Любимые места
+    ua: Улюблені місця
     context: Can be used to suggest offers to user
   picture_title:
     en: "{user, select, undefined {Profile picture} other {Picture of {user}}}"
     fr: "Photo {user, select, undefined {du profil} other {de {user}}}"
+    ru: "Фотография  {user, select, undefined {профиля} other {{user}}}"
+    ua: "Фотографія {user, select, undefined {профілю} other {{user}}}"
   assets_title:
     en: |
       {user, select, _SELF_{My} other{{user}’s} undefined{}} {hasOther, select,
           true{Other}
           other{}
-      } Listings
+      } Listings {user, select,
+        undefined {}
+        other {{user, select,
+          _SELF_ {}
+          other{by {user}}
+        }}
+      }
     fr: |
       {user, select, _SELF_{Mes} other{} undefined{}} {hasOther, select,
           true{Autres}
@@ -72,18 +114,46 @@ user:
           other{de {user}}
         }}
       }
+    ru: |
+      {user, select, _SELF_{Мой} other{{user}’s} undefined{}} {hasOther, select,
+          true{Другие}
+          other{}
+      } Объявление {user, select,
+        undefined {}
+        other {{user, select,
+          _SELF_ {}
+          other{{user}}
+        }}
+      }
+    ua: |
+      {user, select, _SELF_{Мій} other{{user}’s} undefined{}} {hasOther, select,
+          true{Інші}
+          other{}
+      } Оголошення {user, select,
+        undefined {}
+        other {{user, select,
+          _SELF_ {}
+          other{{user}}
+        }}
+      }
     context: Can be "My assets", "My other assets" if user has special name '_SELF_', but can also be "Mark’s (other) assets"…
   account:
     premium_label:
       en: Premium
       fr: Premium
+      ru: Премиум
+      ua: Преміум
       context: Some users can subscribe to get premium features.
     validation_header: &accountValidationHeader
       en: Account validation
       fr: Vérification du profil
+      ru: Проверка аккаунта
+      ua: Перевірка облікового запису
     validation_required_message: &accountValidationRequiredMessage
       en: A validated account is required to continue.
       fr: Un compte vérifié est requis pour continuer.
+      ru: Для продолжения необходимо подтвердить аккаунт.
+      ua: Щоб продовжити, потрібно підтвердити обліковий запис.
     checkout_prerequisite_header: *accountValidationHeader
     checkout_prerequisite_message: *accountValidationRequiredMessage
     contact_user_prerequisite_header: *accountValidationHeader
@@ -91,9 +161,13 @@ user:
     contact_info_header:
       en: My contact info
       fr: Mes coordonnées
+      ru: Моя контактная информация
+      ua: Моя контактна інформація
     email_validation_link_sent:
       en: Please click on the validation link that we’ve just sent to your email address.
       fr: Merci de cliquer sur lien de confirmation que nous venons d’envoyer à votre adresse email.
+      ru: Пожалуйста, нажмите на ссылку подтверждения, которую мы только что отправили на Ваш адрес электронной почты.
+      ua: Будь ласка, натисніть на посилання підтвердження, яку ми тільки що відправили на Вашу адресу електронної пошти.
     new_email_address_helper:
       en: |
         {email, select,
@@ -105,36 +179,64 @@ user:
           undefined {Veuillez valider votre adresse email :}
           other {{email} n’est plus valable ? Renseignez votre nouvelle adresse email :}
         }
+      ru: |
+        {email, select,
+          undefined {Пожалуйста, подтвердите Ваш адрес электронной почты:}
+          other {{email} устарел? Пожалуйста, введите новый адрес электронной почты:}
+        }
+      ua: |
+        {email, select,
+          undefined {Будь ласка, підтвердіть свою електронну адресу:}
+          other {{email} застарілий? Заповніть, будь ласка, Ваш новий адреса електронної пошти:}
+        }
     new_email_address_success:
       en: Please go to your email inbox to validate your new email address
       fr: Merci de consulter votre boîte email pour valider votre nouvelle adresse email
+      ru: Пожалуйста, проверьте Ваш почтовый ящик, чтобы подтвердить Ваш новый адрес электронной почты.
+      ua: Будь ласка, перевірте свою поштову скриньку, щоб підтвердити Вашу нову електронну адресу.
     contact_info_kept_private:
       en: Your contact details will not be displayed publicly.
       fr: Le détail de vos coordonnées n’apparaîtra pas publiquement.
+      ru: Ваши контактные данные не будут отображаться публично.
+      ua: Ваші контактні дані не відображатимуться публічно.
     my_profile_title_label:
       en: My profile title
       fr: Titre de mon profil
+      ru: Название моего профиля
+      ua: Назва мого профілю
       context: User is expected to introduce herself in a few words
     my_description_label:
       en: My description
       fr: Ma description
+      ru: Мое описание
+      ua: Мій опис
       context: Description allow users to introduce themselves and communicate about their interests.
     my_password_title:
       en: My password
       fr: Mon mot de passe
+      ru: Мой пароль
+      ua: Мій пароль
       context: Section where user can update her password
     current_password_label:
       en: Current password
       fr: Mot de passe actuel
+      ru: Текущий пароль
+      ua: Поточний пароль
     new_password_label:
       en: New password
       fr: Nouveau mot de passe
+      ru: Новый пароль
+      ua: Новий пароль
     incorrect_current_password:
       en: Your current password does not match, please check your input.
       fr: La saisie de votre ancien mot de passe est erronée.
+      ru: Ваш текущий пароль не совпадает, пожалуйста, проверьте введенные данные.
+      ua: Ваш поточний пароль не збігається, будь ласка, перевірте введені дані.
     income_statement_title:
       en: Income reports
       fr: Mes revenus
+      ru: Отчеты о доходах
+      ua: Звіти про доходи
       context: "In this section, user can download annual income report on platform to fill in tax returns."
     change_profile_image_button:
       en: |
@@ -149,16 +251,34 @@ user:
             upcoming_upload{Annuler}
             other{Ajouter mon image}
         }
+      ru: |
+        {existing_image, select,
+            has_image{Изменить мое изображение}
+            upcoming_upload{Отмена}
+            other{Добавить мое изображение}
+        }
+      ua: |
+        {existing_image, select,
+            has_image{Змінити моє зображення}
+            upcoming_upload{Відміна}
+            other{Додати моє зображення}
+        }
       context: Same button is used to cancel upload during process.
     update_profile_button:
       en: Update my profile
       fr: Compléter mon profil
+      ru: Обновить мой профиль
+      ua: Оновити мій профіль
     create_organization_button:
       en: Create an organization
       fr: Créer une organisation
+      ru: Создать организацию
+      ua: Створіть організацію
     org_name_with_number_suffix:
       en: "{name} - Org. n°{number}"
       fr: "{name} - Org. n°{number}"
+      ru: "{name} - Орг. n°{number}"
+      ua: "{name} - Орг. n°{number}"
     new_phone_number_helper:
       en: |
         {phone, select,
@@ -170,13 +290,29 @@ user:
           undefined {Renseignez votre numéro de téléphone :}
           other {{phone} n’est plus valable ? Renseignez votre nouveau numéro de téléphone :}
         }
+      ru: |
+        {phone, select,
+          undefined {Пожалуйста, заполните свой номер телефона:}
+          other {{phone} устарел? Пожалуйста, введите новый номер телефона:}
+        }
+      ua: |
+        {phone, select,
+          undefined {Будь ласка, заповніть свій номер телефону:}
+          other {{phone} застарів? Заповніть свій новий номер телефону:}
+        }
     phone_validation_code_helper:
       en: Keep your phone at hand to get your validation code.
       fr: "Conservez votre téléphone à portée de main avant de poursuivre, afin de recevoir un code de validation à 4 chiffres."
+      ru: Держите телефон  рядом с собой, чтобы получить код подтверждения.
+      ua: Тримайте телефон поруч з собою, щоб отримати код підтвердження.
     phone_validation_code_sent:
       en: Please fill in the validation code we have just sent to you.
       fr: Merci de saisir le code de validation que nous venons de vous envoyer.
+      ru: Пожалуйста, введите проверочный код, который мы только что отправили вам.
+      ua: Будь ласка, введіть код валідації, який ми вам щойно надіслали.
     phone_validation_button:
       en: Validate my number
       fr: Vérifier mon numéro
+      ru: Подтвердить мой номер
+      ua: Підтвердити мій номер
       context: Give the user a hint about upcoming validation process once phone number has been filled in.

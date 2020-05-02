@@ -3,34 +3,54 @@ payment:
     add_new_card:
       en: Add a new card
       fr: Utiliser une nouvelle carte
+      ru: Добавить новую карту
+      ua: Додати нову карту
     reuse_card:
       en: Reuse a card
       fr: Réutiliser une carte
+      ru: Повторно использовать карту
+      ua: Повторно використати карту
     number:
       en: Card number
       fr: Numéro de carte
+      ru: Номер карты
+      ua: Номер картки
     expiration_label:
       en: Expires
       fr: Expiration
+      ru: Срок действия
+      ua: Строк дії
     card_verification_code_label:
       en: CVC
       fr: Cryptogramme visuel
+      ru: CVC коде
+      ua: CVC коде
     save_label:
       en: Save card for later.
       fr: Enregistrer ma carte pour plus tard.
+      ru: Сохранить карту на потом.
+      ua: Збережіть карту на потім.
   banking_details:
     en: Banking details
     fr: Informations bancaires
+    ru: Банковские реквизиты
+    ua: Банківські реквізити
   checkout_success_message:
     en: Your payment has been processed, thank you.
     fr: Le paiement a bien été pris en compte.
+    ru: Ваш платеж был обработан, спасибо.
+    ua: Ваш платіж оброблено, дякуемо.
   checkout_failure_message:
     en: The payment has been canceled or has failed. Please try again later.
     fr: Le paiement a été annulé ou a échoué. Veuillez réessayer plus tard.
+    ru: Платеж был отменен или не прошел. Пожалуйста, попробуйте позже.
+    ua: Платіж було скасовано або не виконано. Будь-ласка спробуйте пізніше.
   subscription:
     subscription_label:
       en: Subscription
       fr: Abonnement
+      ru: Подписка
+      ua: Підписка
     plan_description:
       en: |
         {priceTaxExcluded, number, currency} excl tax
@@ -38,24 +58,42 @@ payment:
       fr: |
         {priceTaxExcluded, number, currency} HT
         soit {priceTaxIncluded, number, currency} TTC
+      ru: |
+        {priceTaxExcluded, number, currency} без налога
+        или {priceTaxIncluded, number, currency} включая налог
+      ua: |
+        {priceTaxExcluded, number, currency} без податку
+        або {priceTaxIncluded, number, currency} з урахуванням податку
     subscribe_label:
       en: Subscribe
       fr: S'abonner
+      ru: Подписаться
+      ua: Підписатися
     unsubscribe_label:
       en: Unsubscribe
       fr: Se désabonner
+      ru: Отписаться
+      ua: Відписатись
     selected_plan_label:
       en: Selected
       fr: Sélectionné
+      ru: Выбрано
+      ua: Вибрано
     upcoming_deadline_label:
       en: Upcoming deadline
       fr: Prochaine échéance
+      ru: Предстоящий крайний срок
+      ua: Наступний кінцевий термін
     expiry_label:
       en: Expiry of subscription
       fr: Fin de l'abonnement
+      ru: Истечение срока подписки
+      ua: Закінчення терміну підписки
     already_subscribed:
       en: You already have an ongoing subscription.
       fr: Vous avez déjà un abonnement en cours.
+      ru: У вас уже есть действующая подписка.
+      ua: У вас уже є діюча підписка.
     checkout_confirmation_message:
       en: |
         You have selected the subscription plan « {planTitle} »
@@ -67,58 +105,104 @@ payment:
         pour un montant de {priceTaxExcluded, number, currency} HT
         soit {priceTaxIncluded, number, currency} TTC.
         Continuez pour accéder à la page de paiement.
+      ru: |
+        Вы выбрали план подписки « {planTitle} »
+        для {priceTaxExcluded, number, currency} без учета налогов
+        или {priceTaxIncluded, number, currency} налог включен.
+        Продолжайте, чтобы перейти на страницу оплаты.
+      ua: |
+        Ви вибрали план передплати « {planTitle} »
+        для {priceTaxExcluded, number, currency} без податку
+        або {priceTaxIncluded, number, currency} включений податок.
+        Продовжуйте, щоб отримати доступ до сторінки платежів.
     checkout_success_message:
       en: Your payment has been processed, thank you for subscribing.
       fr: Le paiement de votre abonnement a bien été pris en compte.
+      ru: Ваш платеж обработан, спасибо за подписку.
+      ua: Ваш платіж оброблено, дякуємо за підписку.
     checkout_failure_message:
       en: The payment of your subscription has been canceled or has failed. Please try again later.
       fr: Le paiement de votre abonnement a été annulé ou a échoué. Veuillez réessayer plus tard.
+      ru: Оплата вашей подписки была отменена или не удалась. Пожалуйста, попробуйте позже.
+      ua: Оплата вашої підписки скасована або не виконана. Будь-ласка спробуйте пізніше.
   error:
     payment_error_title:
       en: Payment failed
       fr: Échec du paiement
+      ru: Платеж не прошел
+      ua: Платіж не пройшов
     invalid_card_number:
       en: Please check your card number.
       fr: Veuillez vérifier votre numéro de carte.
+      ru: Пожалуйста, проверьте номер вашей карты.
+      ua: Будь ласка, перевірте номер вашої картки.
     invalid_card_expiration_date:
       en: Please check your card expiration date.
       fr: Veuillez vérifier la date d'expiration de votre carte.
+      ru: Пожалуйста, проверьте срок действия вашей карты.
+      ua: Будь ласка, перевірте термін дії вашої картки.
     invalid_card_cvc:
       en: Please check your card validation code (on the back of your card).
       fr: Veuillez vérifier votre code de validation (inscrit au dos de votre carte bancaire).
+      ru: Пожалуйста, проверьте код подтверждения вашей карты (на обратной стороне карты).
+      ua: Будь ласка, перевірте код підтвердження вашої карти (на зворотній стороні картки).
     invalid_card_zip:
       en: Please check your zip.
       fr: Veuillez vérifier votre code postal.
+      ru: Пожалуйста, проверьте ваш почтовый индекс.
+      ua: Будь ласка, перевірте ваш поштовий індекс.
     card_limit_reached:
       en: Your card limit has been reached.
       fr: Le plafond de votre carte bancaire a été atteint.
+      ru: Лимит вашей карты достигнут.
+      ua: Ліміт вашої картки досягнуто.
     card_3dsecure_not_available:
       en: "Your card isn’t available with 3DSecure authentication."
       fr: "La vérification 3DSecure n’est pas disponible sur votre carte."
+      ru: "Проверка 3DSecure недоступна на вашей карте."
+      ua: "Перевірка 3DSecure недоступна на вашій карті."
     card_3dsecure_incompatible:
       en: Your card is incompatible with 3DSecure authentication.
       fr: "Votre carte n’est pas compatible avec la vérification 3DSecure."
+      ru: Ваша карта несовместима с аутентификацией 3DSecure.
+      ua: Ваша картка несумісна з аутентифікацією 3DSecure.
     3dsecure_fail:
       en: The 3DSecure authentication has failed.
       fr: La vérification 3DSecure a échoué.
+      ru: Не удалось осуществить аутентификацию 3DSecure.
+      ua: Не вдалося здійснити аутентифікацію 3DSecure.
     insufficient_funds:
       en: Please check that you have sufficient funds in your bank account.
       fr: Veuillez vérifier que vous disposez des fonds suffisants sur votre compte.
+      ru: Пожалуйста, убедитесь, что у вас достаточно средств на вашем банковском счете.
+      ua: Будь ласка, переконайтеся, що у вас достатньо коштів на вашому банківському рахунку.
     do_not_honor:
       en: Your bank has refused the payment. Please enquire before trying again.
       fr: La banque a refusé le paiement. Veuillez la contacter avant de réessayer.
+      ru: Банк отказал в платеже. Пожалуйста, свяжитесь с ним, прежде тем как создавать снова.
+      ua: Банк відмовив у платежі. Будь ласка, зв'яжіться з ним, перш ніж створювати знову.
     card_inactive:
       en: Your card is inactive. Please activate it before trying again.
       fr: "Votre carte bancaire est inactive. Veuillez l’activer avant de réessayer."
+      ru: Ваша карта неактивна. Пожалуйста, активируйте его, прежде чем пытаться снова.
+      ua: Ваша картка неактивна. Будь ласка, активуйте її, перш ніж спробувати.
     card_expired:
       en: Your card has expired. Please add a new one.
       fr: Votre carte bancaire a expiré. Veuillez saisir un autre numéro de carte bancaire.
+      ru: Срок действия вашей карты истек. Пожалуйста, добавьте новую.
+      ua: Термін дії вашої картки закінчився. Будь ласка, додайте нову.
     card_expiration_too_short:
       en: Please use a card that expires in one month at least.
       fr: Veuillez utiliser une carte expirant dans au moins un mois.
+      ru: Пожалуйста, используйте карту, срок действия которой истекает как минимум через месяц.
+      ua: Будь ласка, використовуйте карту, термін дії якої закінчується як мінімум через місяць.
     generic_error:
       en: "The payment has failed. Please check that you have sufficient funds on your account and that your card limit hasn’t been reached."
       fr: "Le paiement a échoué. Veuillez vérifier que vous disposez de fonds suffisants et que le plafond de votre carte bancaire n’a pas été atteint."
+      ru: "Платеж не прошел. Пожалуйста, убедитесь, что на вашем счету достаточно средств и лимит вашей карты не достигнут."
+      ua: "Не вдалося здійснити платіж. Перевірте, чи є у вас достатньо коштів на вашому рахунку та чи не досягнуто ліміту вашої картки."
     not_authorized_subscription:
       en: Sorry, you can't subscribe to any plan.
       fr: Désolé, vous ne pouvez pas vous abonner.
+      ru: Извините, вы не можете подписаться.
+      ua: Вибачте, ви не можете підписатися.

@@ -7,24 +7,42 @@ common:
     fr: >-
       Ajoutez <a href="mailto:contact@example.com">contact@example.com</a>
       à votre carnet d’adresses pour être sûr de recevoir nos emails.
+    ru: >-
+      Пожалуста, добавьте <a href="mailto:contact@example.com">contact@example.com</a> в адресную книгу,
+      чтобы убедиться, что вы получаете наши электронные письма. 
+    ua: >-
+      Будь-ласка, додайте <a href="mailto:contact@example.com">contact@example.com</a> до вашої адресної книги,
+      щоб переконатися, що ви отримуєте наші електронні листи.
   trailing_content: &trailing_content
     en: See you soon!
     fr: A très vite !
+    ru: До скорой встречи!
+    ua: До побачення!
   footer_content: &footer_text
     en: >-
       We’ll be happy to <a href="mailto:contact@example.com">give a hand</a> if you have any question.
     fr: >-
       Une question ? Écrivez-nous à l’adresse <a href="mailto:contact@example.com">contact@example.com</a>
       et nous vous répondrons dès que possible.
+    ru: >-
+      Мы будем рады <a href="mailto:contact@example.com">помочь</a>, если у вас возникнут вопросы.
+    ua: >-
+      Ми будемо раді <a href="mailto:contact@example.com">допомогти</a>, якщо у вас виникнуть запитання.
   legal_notice: &legal
-    en: "All rights reserved © 2019 {serviceName, select, undefined {} other {{serviceName}}}"
-    fr: "Tous droits réservés © 2019 {serviceName, select, undefined {} other {{serviceName}}}"
+    en: "All rights reserved © 2020 {serviceName, select, undefined {} other {{serviceName}}}"
+    fr: "Tous droits réservés © 2020 {serviceName, select, undefined {} other {{serviceName}}}"
+    ru: "Все права защищены © 2020 {serviceName, select, undefined {} other {{serviceName}}}"
+    ua: "Усі права захищені © 2020 {serviceName, select, undefined {} other {{serviceName}}}"
   style__color_brand: &brand_color
     en: "#1C3661"
     fr: "#1C3661"
+    ru: "#1C3661"
+    ua: "#1C3661"
   style__color_calltoaction: &cta_color
     en: "#1C3661"
     fr: "#1C3661"
+    ru: "#1C3661"
+    ua: "#1C3661"
 
 # Individual template entry in email collection
 registration:
@@ -39,17 +57,43 @@ registration:
         undefined {}
         other {\_sur {serviceName}}
       }"
+    ru: >-
+      "Подтвердите свой {serviceName, select,
+        undefined {}
+        other {\_{serviceName}}
+      } адрес электронной почты"
+    ua: >-
+      "Підтвердьте{serviceName, select,
+        undefined {}
+        other {\_{serviceName}}
+      } адреса електронної пошти"
   content:
+    en: >-
+      Hello and welcome!<br><br>
+
+      Please validate your email address by clicking the button below.
     fr: >-
       Bonjour et bienvenue !<br><br>
 
       Merci de valider votre adresse e-mail en cliquant sur le bouton ci-dessous.
+    ru: >-
+      Здравствуйте и добро пожаловать!<br><br>
+
+      Пожалуйста, подтвердите свой адрес электронной почты, нажав кнопку ниже.
+    ua: >-
+      Привіт і ласкаво просимо!<br><br>
+
+      Будь ласка, підтвердіть свою електронну адресу, натиснувши кнопку нижче.
   cta__button_url:
     en: "{emailCheckLink}"
     fr: "{emailCheckLink}"
+    ru: "{emailCheckLink}"
+    ua: "{emailCheckLink}"
   cta_button__text:
     en: Confirm email address
     fr: Valider mon adresse email
+    ru: Подтвердите адрес электронной почты
+    ua: Підтвердьте електронну адресу
   # Reference use example.
   # We can’t use YAML merge `<<: *reference` with JSON schema parsing
   # https://github.com/nodeca/js-yaml/blob/master/lib/js-yaml/schema/json.js
@@ -70,17 +114,35 @@ emailCheck:
         undefined {}
         other {\_sur {serviceName}}
       }"
+    ru: >-
+      "Подтвердите Ващ{serviceName, select,
+        undefined {}
+        other {\_{serviceName}}
+      } адрес электронной почты"
+    ua: >-
+      "Підтвердьте Вашу{serviceName, select,
+        undefined {}
+        other {\_{serviceName}}
+      } адресу електронної пошти"
   content:
     en: >-
       Please confirm your new email address by clicking the following button.
     fr: >-
       Merci de valider votre adresse e-mail en cliquant sur le bouton ci-dessous.
+    ru: >-
+      Пожалуйста, подтвердите Ваш новый адрес электронной почты, нажав следующую кнопку.
+    ua: >-
+      Підтвердьте свою нову електронну адресу, натиснувши наступну кнопку.
   cta__button_url:
     en: "{emailCheckLink}"
     fr: "{emailCheckLink}"
+    ru: "{emailCheckLink}"
+    ua: "{emailCheckLink}"
   cta_button__text:
     en: Confirm email address
     fr: Vérifier mon email
+    ru: Подтвердите адрес электронной почты
+    ua: Підтвердьте електронну адресу
 
 passwordReset:
   subject:
@@ -92,6 +154,14 @@ passwordReset:
         undefined {}
         other {\_{serviceName}}
       }"
+    ru: "Забыли{serviceName, select,
+        undefined {}
+        other {\_{serviceName}}
+      } пароль"
+    ua: "Забули{serviceName, select,
+        undefined {}
+        other {\_{serviceName}}
+      } пароль"
   content:
     en: >-
       Please click the following link to reset your password. If you’ve not initiated this request,
@@ -99,17 +169,29 @@ passwordReset:
     fr: >-
       Si vous êtes à l’origine de cette demande de nouveau mot de passe, merci de cliquer sur le bouton ci-dessous.
       Dans le cas contraire merci de nous contacter.
+    ru: >-
+      Пожалуйста, нажмите на следующую ссылку, чтобы сбросить пароль. Если это не Вы инициировали этот запрос,
+      пожалуйста, свяжитесь с нами, чтобы мы могли защитить Ваш аккаунт.
+    ua: >-
+      Будь ласка, натисніть на наступне посилання, щоб скинути пароль. Якщо це не Ви ініціювали цей запит,
+      будь ласка, зв'яжіться з нами, щоб ми могли захистити Ваш аккаунт.
   cta__button_url:
     en: "{passwordResetLink}"
     fr: "{passwordResetLink}"
+    ru: "{passwordResetLink}"
+    ua: "{passwordResetLink}"
   cta_button__text:
     en: Reset password
     fr: Réinitialiser mon mot de passe
+    ru: Сброс пароля
+    ua: Скинути пароль
 
 transactionAcceptedByOwnerToTaker:
   subject:
     en: Your request about the listing "{assetName}" has been accepted
     fr: Votre demande au sujet de l’annonce "{assetName}" a été acceptée
+    ru: Ваш запрос об объявлении "{assetName}" был принят
+    ua: Ваш запит про оголошення "{assetName}" був прийнятий
   content:
     en: >-
       Hi {takerName},<br><br>
@@ -123,11 +205,25 @@ transactionAcceptedByOwnerToTaker:
       {ownerName} a accepté votre proposition au sujet de l’annonce "{assetName}".<br><br>
 
       Rendez-vous dans <a href="{conversationLink}">votre messagerie</a> pour échanger avec {ownerName} !
+    ru: >-
+      Здравствуйте {takerName},<br><br>
+
+      {ownerName} принял ваше предложение об объявлении "{assetName}".<br><br>
+
+      Перейдите на страницу <a href="{conversationLink}">своей папки "Входящие" </a> чтобы обсудить с {ownerName}!
+    ua: >-
+      Привіт {takerName},<br><br>
+
+      {ownerName} прийняв вашу пропозицію по оголошенню "{assetName}".<br><br>
+
+      Перейдіть у <a href="{conversationLink}">свою поштову скриньку</a> щоб обговорити з {ownerName}!
 
 transactionRefusedByOwnerToTaker:
   subject:
     en: Your request about the listing "{assetName}" has been rejected
     fr: Votre demande au sujet de l’annonce "{assetName}" a été refusée
+    ru: Ваш запрос об объявлении "{assetName}" был отклонен
+    ua: Ваш запит про оголошення "{assetName}" відхилено
   content:
     en: >-
       Hi {takerName},<br><br>
@@ -141,11 +237,25 @@ transactionRefusedByOwnerToTaker:
       {ownerName} a refusé votre proposition au sujet de l’annonce "{assetName}".<br><br>
 
       Rendez-vous dans <a href="{conversationLink}">votre messagerie</a> pour échanger avec {ownerName} !
+    ru: >-
+      Здравствуйте {takerName},<br><br>
+
+      {ownerName} отклонил ваше предложение об объявлении "{assetName}".<br><br>
+
+      Перейдите на страницу <a href="{conversationLink}">своей папки "Входящие"</a> чтобы обсудить c {ownerName}!
+    ua: >-
+      Привіт {takerName},<br><br>
+
+      {ownerName} відхилив вашу пропозицію по оголошенню "{assetName}".<br><br>
+
+      Перейдіть у <a href="{conversationLink}">свою поштову скриньку</a> щоб обговорити з {ownerName}!
 
 transactionAcceptedByTakerToOwner:
   subject:
     en: The request about the listing "{assetName}" has been confirmed
     fr: La demande au sujet de l’annonce "{assetName}" a été confirmée
+    ru: Запрос на объявление "{assetName}" подтвержден
+    ua: Запит на оголошення "{assetName}" підтверджено
   content:
     en: >-
       Hi {ownerName},<br><br>
@@ -159,11 +269,25 @@ transactionAcceptedByTakerToOwner:
       {takerName} a confirmé sa demande au sujet de l’annonce "{assetName}".<br><br>
 
       Rendez-vous dans <a href="{conversationLink}">votre messagerie</a> pour échanger avec {takerName} !
+    ru: >-
+      Здравствуйте {ownerName},<br><br>
+
+      {takerName} подтвердил свой запрос относительно объявления "{assetName}".<br><br>
+
+      Перейдите в <a href="{conversationLink}">свой почтовый ящик</a> чтобы обсудить c {takerName}!
+    ua: >-
+      Привіт {ownerName},<br><br>
+
+      {takerName} підтвердив свій запит щодо оголошення "{assetName}".<br><br>
+
+      Перейдіть на <a href="{conversationLink}">вашу поштову скриньку</a> щоб обговорити з {takerName}!
 
 transactionRefusedByTakerToOwner:
   subject:
     en: The request about the listing "{assetName}" has been declined
     fr: La demande au sujet de l’annonce "{assetName}" a été déclinée
+    ru: Запрос на объявление "{assetName}" был отклонен
+    ua: Запит на оголошення "{assetName}" відхилено
   content:
     en: >-
       Hi {ownerName},<br><br>
@@ -177,3 +301,15 @@ transactionRefusedByTakerToOwner:
       {takerName} a décliné sa demande au sujet de l’annonce "{assetName}".<br><br>
 
       Rendez-vous dans <a href="{conversationLink}">votre messagerie</a> pour échanger avec {takerName} !
+    ru: >-
+      Здравствуйте {ownerName},<br><br>
+
+      {takerName} отклонил ваше предложение об объявлении "{assetName}".<br><br>
+
+      Перейдите на страницу <a href="{conversationLink}">своей папки "Входящие"</a> чтобы обсудить c {takerName}!
+    ua: >-
+      Привіт {ownerName},<br><br>
+
+      {takerName} відхилив вашу пропозицію по оголошенню "{assetName}".<br><br>
+
+      Перейдите в <a href="{conversationLink}">вашу поштову скриньку</a> щоб обговорити з {takerName}!

@@ -18,6 +18,24 @@ time:
           m{ {nbTimeUnits, plural, one{# minute} other{# minutes}} }
           other{}
       }
+    ru: |
+      {timeUnit, select,
+          м{ {nbTimeUnits, plural, one{# месяц} other{# месяцев}} }
+          д{ {nbTimeUnits, plural, one{# день} other{# дней}} }
+          н{ {nbTimeUnits, plural, one{# ночь} other{# ночей}} }
+          ч{ {nbTimeUnits, plural, one{# час} other{# часов}} }
+          мин{ {nbTimeUnits, plural, one{# минута} other{# минут}} }
+          other{}
+      }
+    ua: |
+      {timeUnit, select,
+          м{ {nbTimeUnits, plural, one{# місяць} other{# місяців}} }
+          д{ {nbTimeUnits, plural, one{# день} other{# днів}} }
+          н{ {nbTimeUnits, plural, one{# ніч} other{# ночей}} }
+          г{ {nbTimeUnits, plural, one{# година} other{# годин}} }
+          хв{ {nbTimeUnits, plural, one{# хвилина} other{# хвилин}} }
+          other{}
+      }
   per_time_unit:
     en: |
       { timeUnit, select,
@@ -37,6 +55,26 @@ time:
         n{ {nbUnits, plural, one{Par nuit} other{# nuits}} }
         h{ {nbUnits, plural, one{Par heure} other{# heures}} }
         m{ {nbUnits, plural, one{Par minute} other{# minutes}} }
+        other{}
+      }
+    ru: |
+      { timeUnit, select,
+        м{ {nbUnits, plural, one{В месяц} other{# месяцев}} }
+        н{ {nbUnits, plural, one{В неделю} other{# недель}} }
+        д{ {nbUnits, plural, one{В день} other{# дней}} }
+        н{ {nbUnits, plural, one{За ночь} other{# ночей}} }
+        ч{ {nbUnits, plural, one{В час} other{# часов}} }
+        мин{ {nbUnits, plural, one{В минуту} other{# минут}} }
+        other{}
+      }
+    ua: |
+      { timeUnit, select,
+        м{ {nbUnits, plural, one{В місяць} other{# місяців}} }
+        т{ {nbUnits, plural, one{У тиждень} other{# тижнів}} }
+        д{ {nbUnits, plural, one{У день} other{# днів}} }
+        н{ {nbUnits, plural, one{За ніч} other{# ночей}} }
+        г{ {nbUnits, plural, one{За годину} other{# годин}} }
+        хв{ {nbUnits, plural, one{У хвилину} other{# хвилин}} }
         other{}
       }
   per_time_unit_with_context:
@@ -66,6 +104,32 @@ time:
         m{ {nbUnits, plural, one{Par minute} other{# minutes}} }
         other{}
       }
+    ru: |
+      {context, select,
+        undefined {}
+        other {{context}}
+      }: { timeUnit, select,
+        м{ {nbUnits, plural, one{В месяц} other{# месяцев}} }
+        н{ {nbUnits, plural, one{В неделю} other{# недель}} }
+        д{ {nbUnits, plural, one{В день} other{# дней}} }
+        н{ {nbUnits, plural, one{За ночь} other{# ночей}} }
+        ч{ {nbUnits, plural, one{В час} other{# часов}} }
+        мин{ {nbUnits, plural, one{В минуту} other{# минут}} }
+        other{}
+      }
+    ua: |
+      {context, select,
+        undefined {}
+        other {{context}}
+      }: { timeUnit, select,
+        м{ {nbUnits, plural, one{В місяць} other{# місяців}} }
+        т{ {nbUnits, plural, one{У тиждень} other{# тижнів}} }
+        д{ {nbUnits, plural, one{У день} other{# днів}} }
+        н{ {nbUnits, plural, one{За ніч} other{# ночей}} }
+        г{ {nbUnits, plural, one{За годину} other{# годин}} }
+        хв{ {nbUnits, plural, one{У хвилину} other{# хвилин}} }
+        other{}
+      }
     context: Allow to add some context to time displayed with another translation, such as “Duration:…”
   ago:
     en: |
@@ -89,45 +153,91 @@ time:
         m{ {nbUnits, plural, =0{quelques instants} one{une minute} other{# minutes}} }
         other{}
       }
+    ru: |
+      { timeUnit, select,
+        м{ {nbUnits, plural, one{один месяц} other{# месяцев}} }
+        н{ {nbUnits, plural, one{одина неделя} other{# недель}} }
+        д{ {nbUnits, plural, one{один день} other{# дней}} }
+        н{ {nbUnits, plural, one{одина ночь} other{# ночей}} }
+        ч{ {nbUnits, plural, one{один час} other{# часов}} }
+        m{ {nbUnits, plural, =0{несколько моментов} one{одна минута} other{# минут}} }
+        other{}
+      } назад
+    ua: |
+      { timeUnit, select,
+        м{ {nbUnits, plural, one{один місяць} other{# місяців}} }
+        т{ {nbUnits, plural, one{один тиждень} other{# тижнів}} }
+        д{ {nbUnits, plural, one{один день} other{# днів}} }
+        н{ {nbUnits, plural, one{одина ніч} other{# ночей}} }
+        г{ {nbUnits, plural, one{одина година} other{# годин}} }
+        m{ {nbUnits, plural, =0{кілька моментів} one{одна хвилина} other{# хвилин}} }
+        other{}
+      } тому
   calendar_prompt_date:
     en: Please pick your dates
     fr: Veuillez choisir vos dates
+    ru: Пожалуйста, выберите ваши даты
+    ua: Будь ласка, виберіть дати
   date_short:
     en: "{date, date, short}"
     fr: "{date, date, short}"
+    ru: "{date, date, short}"
+    ua: "{date, date, short}"
   date_long:
     en: "{date, date, long}"
     fr: "{date, date, long}"
+    ru: "{date, date, long}"
+    ua: "{date, date, long}"
   date_fullmonth:
     en: "{date, date, fullmonth}"
     fr: "{date, date, fullmonth}"
+    ru: "{date, date, fullmonth}"
+    ua: "{date, date, fullmonth}"
   date_full:
     en: "{date, date, full}"
     fr: "{date, date, full}"
+    ru: "{date, date, full}"
+    ua: "{date, date, full}"
   time_short:
     en: "{time, time, short}"
     fr: "{time, time, short}"
+    ru: "{time, time, short}"
+    ua: "{time, time, short}"
   time_full:
     en: "{time, time, full}"
     fr: "{time, time, full}"
+    ru: "{time, time, full}"
+    ua: "{time, time, full}"
   year_label:
     en: Year
     fr: Année
+    ru: Год
+    ua: Рік
   month_label:
     en: Month
     fr: Year
+    ru: Месяц
+    ua: Місяць
   from_day_label:
     en: From
     fr: Du
+    ru: С
+    ua: З
   to_day_label:
     en: To
     fr: Au
+    ru: До
+    ua: До
   duration_label:
     en: Duration
     fr: Durée
+    ru: Продолжительность
+    ua: Тривалість
   today:
     en: Today
     fr: Aujourd’hui
+    ru: Cегодня
+    ua: Сьогодні
   on_date:
     en: |
       on {date, date, short}{showTime, select,
@@ -137,6 +247,16 @@ time:
     fr: |
       le {date, date, short}{showTime, select,
           true { à {date, time, short}}
+          other {}
+      }
+    ru: |
+      на {date, date, short}{showTime, select,
+          true { at {date, time, short}}
+          other {}
+      }
+    ua: |
+      на {date, date, short}{showTime, select,
+          true { at {date, time, short}}
           other {}
       }
   from_start_date_to_end_date:
@@ -162,46 +282,94 @@ time:
           true { à {endDate, time, short}}
         }}
       }
+    ru: |
+      {endDate, select, undefined{Начиная с} other {С}} {startDate, date, short}{showTime, select,
+        other {}
+        true { с {startDate, time, short}}
+      } {endDate, select,
+        undefined {}
+        other {по {endDate, date, short}{showTime, select,
+          other {}
+          true { по {endDate, time, short}}
+        }}
+      }
+    ua: |
+      {endDate, select, undefined{Починаючи з} other {З}} {startDate, date, short}{showTime, select,
+        other {}
+        true { з {startDate, time, short}}
+      } {endDate, select,
+        undefined {}
+        other {по {endDate, date, short}{showTime, select,
+          other {}
+          true { по {endDate, time, short}}
+        }}
+      }
   start_label:
     en: Start
     fr: Début
+    ru: Начиная
+    ua: Починаючи
   end_label:
     en: End
     fr: Fin
+    ru: Оканчивая
+    ua: Закінчуючи
   start_date_label:
     en: Start date
     fr: Date de début
+    ru: Дата начала
+    ua: Дата початку
   end_date_label:
     en: End date
     fr: Date de fin
+    ru: Дата окончания
+    ua: Кінцева дата
   missing_end_date_meaning:
     en: Indefinite period
     fr: Durée indéterminée
+    ru: Неопределенный период
+    ua: Невизначений період
     context: Can be open-ended contract or any other type of unlimited duration
   clear_dates:
     en: Clear dates
     fr: Effacer les dates
+    ru: Очистить даты
+    ua: Очистити дати
   delay:
     few_minutes:
       en: Few minutes
       fr: Quelques minutes
+      ru: Несколько минут
+      ua: Кілька хвилин
     less_than_one_hour:
       en: Less than one hour
       fr: Moins d'une heure
+      ru: Менее одного часа
+      ua: Менше однієї години
     few_hours:
       en: Few hours
       fr: Quelques heures
+      ru: Несколько часов
+      ua: Декілька годин
     in_the_day:
       en: In the day
       fr: Dans la journée
+      ru: В течение дня
+      ua: Протягом дня
     less_than_one_day:
       en: Less than one day
       fr: Moins de 24 heures
+      ru: Менее одного дня
+      ua: Менше одного дня
   error:
     incorrect_dates:
       en: Dates are incorrect.
       fr: Les dates sont incorrectes.
+      ru: Даты неверны.
+      ua: Дати невірні.
       context: Can be used in any context such as availability settings or transaction.
     overlapping_dates:
       en: Please select a period not overlapping previous ones.
       fr: Veuillez indiquer une période qui ne recouvre pas une autre période existante.
+      ru: Пожалуйста, выберите период, не перекрывающий предыдущие.
+      ua: Будь ласка, виберіть період, що не перекриває попередні.

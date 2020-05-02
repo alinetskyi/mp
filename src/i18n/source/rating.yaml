@@ -2,24 +2,38 @@ rating:
   rating_label:
     en: "Rating:"
     fr: "Avis\_:"
+    ru: "Рейтинг:"
+    ua: "Рейтинг:"
   rating_placeholder:
     en: Rating*
     fr: Avis*
+    ru: Рейтинг*
+    ua: Рейтинг*
   ratings_label:
     en: Ratings
     fr: Évaluations
+    ru: Рейтинги
+    ua: Рейтинги
   my_ratings:
     en: My ratings
     fr: Mes évaluations
+    ru: Мои рейтинги
+    ua: Мої рейтинги
   ratings_prerequisite_message:
     en: A validated account is required to see the ratings.
     fr: Un compte vérifié est requis pour voir les évaluations.
+    ru: Для просмотра рейтинга требуется подтвержденный аккаунт.
+    ua: Для перегляду рейтингів необхідний підтверджений обліковий запис.
   your_rating_label:
     en: Your rating
     fr: Votre avis
+    ru: Ваш рейтинг
+    ua: Ваш рейтинг
   rating_given_user_label:
     en: Rating given by {userName}
     fr: Évaluation laissée par {userName}
+    ru: Отзыв оставлен {userName}
+    ua: Відгук залишив {userName}
   no_rating_message:
     en: |
       {isCurrentUser, select,
@@ -31,6 +45,16 @@ rating:
           true {Vous n'avez}
           other {Cet utilisateur n'a}
       } pas encore d’évaluations sur {SERVICE_NAME}.
+    ru: |
+      {isCurrentUser, select,
+          true {У Вас}
+          other {Этот пользователь}
+      } пока нет рейтинга {SERVICE_NAME}.
+    ua: |
+      {isCurrentUser, select,
+          true {У Вас}
+          other {Цей користувач}
+      } пока немає рейтингу {SERVICE_NAME}.
   no_asset_rating_message:
     en: |
       {isOwnAsset, select,
@@ -42,37 +66,67 @@ rating:
           true {Votre annonce}
           other {Cette annonce}
       } n’a pas encore d’évaluations sur {SERVICE_NAME}.
+    ru: |
+      {isOwnAsset, select,
+          true {Ваше объявление}
+          other {Это объявление пользователя}
+      } пока что не имеет оценок {SERVICE_NAME}.
+    ua: |
+      {isOwnAsset, select,
+          true {Ваше оголошення}
+          other {Це оголошення користувача}
+      } ще не має оцінок {SERVICE_NAME}.
   rating_no_update_message:
     en: You cannot update your rating or your comment anymore.
     fr: Vous ne pouvez plus modifier vos avis et commentaires.
+    ru: Вы больше не можете изменять свой рейтинг и комментарий.
+    ua: Ви більше не можете змінювати свій рейтинг та коментар.
   score:
     good:
       en: Good
       fr: Positif
+      ru: Хорошо
+      ua: Добре
     quite_good:
       en: Quite good
       fr: Assez positif
+      ru: Достаточно хорошо
+      ua: Досить добре
     average:
       en: Average
       fr: Moyen
+      ru: Средне
+      ua: Середньо
     negative:
       en: Bad
       fr: Négatif
+      ru: Плохо
+      ua: Погано
     very_negative:
       en: Very bad
       fr: Très négatif
+      ru: Очень плохо
+      ua: Дуже погано
   comment_label:
     en: "Comment:"
     fr: "Commentaire\_:"
+    ru: "Комментарий:"
+    ua: "Коментар:"
   missing_score:
       en: Missing score
       fr: Note manquante
+      ru: Отсутствует оценка
+      ua: Відсутня оцінка
   see_more_ratings:
     en: See more ratings
     fr: Voir plus d’évaluations
+    ru: Посмотреть больше отзывов
+    ua: Подивитися більше відгуків
   average_label:
     en: "Score:"
     fr: "Note\_:"
+    ru: "Оценка:"
+    ua: "Оцінка:"
   count:
     en: |
       {nb_ratings, plural,
@@ -83,6 +137,16 @@ rating:
       {nb_ratings, plural,
           one{# évaluation}
           other{# évaluations}
+      }
+    ru: |
+      {nb_ratings, plural,
+          one{# рейтинг}
+          other{# рейтинги}
+      }
+    ua: |
+      {nb_ratings, plural,
+          one{# рейтинг}
+          other{# рейтинги}
       }
   review_count:
     en: |
@@ -95,6 +159,16 @@ rating:
           one{# commentaire}
           other{# commentaires}
       }
+    ru: |
+      {nb_reviews, plural,
+          one{# обзор}
+          other{# обзоров}
+      }
+    ua: |
+      {nb_reviews, plural,
+          one{# ревю}
+          other{# ревю}
+      }
     context: Reviews are ratings with a text comment.
   recommendations_count:
     en: |
@@ -106,4 +180,14 @@ rating:
       {nb_recommendations, plural,
           one{# recommandation}
           other{# recommandations}
+      }
+    ru: |
+      {nb_recommendations, plural,
+          one{# рекомендация}
+          other{# рекомендаций}
+      }
+    ua: |
+      {nb_recommendations, plural,
+          one{# рекомендація}
+          other{# рекомендацій}
       }

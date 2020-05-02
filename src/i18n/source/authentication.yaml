@@ -2,18 +2,28 @@ authentication:
   log_in_button:
     en: Log In
     fr: Connexion
+    ru: Войти
+    ua: Увійти
   log_out_button:
     en: Log Out
     fr: Déconnexion
+    ru: Выйти
+    ua: Вийти
   sign_up_button:
     en: Sign Up
     fr: Inscription
+    ru: Регистрация
+    ua: Реєстрація
   sign_up_action:
     en: Sign Up
     fr: S'inscrire
+    ru: Регистрация
+    ua: Реєстрація
   log_in_success:
     en: Successfully logged in
     fr: Connexion réussie
+    ru: Успешная авторизация
+    ua: Успішна авторизація
   log_in_with_provider:
     en: |-
       Log In with {provider, select,
@@ -25,27 +35,51 @@ authentication:
         undefined {externe}
         other {avec {provider}}
       }
+    ru: |-
+      Войдите с помощью {provider, select,
+        undefined {external provider}
+        other {{provider}}
+      }
+    ua: |-
+      Увійдіть за допомогою {provider, select,
+        undefined {external provider}
+        other {{provider}}
+      }
   lost_password_button:
     en: Forgot password?
     fr: Mot de passe oublié
+    ru: Забыли пароль?
+    ua: Забули пароль?
   lost_password_message:
     en: Please enter the email address associated with your account. We’ll email you a link to reset your password.
     fr: Veuillez renseigner votre adresse email afin de redéfinir votre mot de passe.
+    ru: Пожалуйста введите адрес электронной почты привязанный к вашему аккаунту. Мы вышлем вам ссылку для сброса пароля.
+    ua: Будь ласка, введіть адресу електронної пошти прив'язаний до вашого аккаунту. Ми надішлемо вам посилання для скидання пароля.
   lost_password_email_sent:
     en: A password reset link has just been sent to you.
     fr: Un email contenant un lien de redéfinition de mot de passe vient de vous être envoyé.
+    ru: Вам было отправлено письмо со ссылкой для сброса пароля.
+    ua: Вам було відправлено лист з посиланням для скидання пароля.
   log_in_required_message:
     en: "Please connect to {SERVICE_NAME} to continue."
     fr: "Veuillez vous connecter à {SERVICE_NAME} pour continuer."
+    ru: "Пожалуйста, войдите в {SERVICE_NAME} чтобы продолжить."
+    ua: "Будь ласка, увійдіть до {SERVICE_NAME} щоб продовжити."
   no_account_button:
     en: Don’t have an account?
     fr: "Vous n’avez pas de compte\_?"
+    ru: У вас нет аккаунта?
+    ua: У вас немає облікового запису?
   existing_account_button:
     en: Already have an account?
     fr: "Déjà inscrit(e)\_?"
+    ru: Уже есть аккаунт?
+    ua: Вже є аккаунт?
   terms_optin[markdown]:
     en: I read and agree to the [Terms of Service]({terms_path}) applicable on {SERVICE_NAME}.
     fr: J’ai lu et accepte les [Conditions Générales d’Utilisation]({terms_path}) de {SERVICE_NAME}.
+    ru: Я прочитал и согласен с [Условиями предоставления услуг]({terms_path}) применимыми к {SERVICE_NAME}.
+    ua: Я читаю і погоджуюся з  [Умовами надання послуг]({terms_path}), що застосовуються до {SERVICE_NAME}.
   social_auth_button:
     en: |
       Continue {network_name, select,
@@ -59,13 +93,29 @@ authentication:
           Facebook{avec Facebook}
           other{}
       }
+    ru: |
+      Продолжить {network_name, select,
+          Google{с Google}
+          Facebook{с Facebook}
+          other{}
+      }
+    ua: |
+      Продовжити {network_name, select,
+          Google{с Google}
+          Facebook{с Facebook}
+          other{}
+      }
   placeholder:
     email:
       en: Email Address
       fr: Adresse email
+      ru: Адрес электронной почты
+      ua: Адреса електронної пошти
     password:
       en: Password
       fr: Mot de passe
+      ru: Пароль
+      ua: Пароль
     create_password:
       en: |
         Create a password {min_number_of_characters, select,
@@ -77,47 +127,83 @@ authentication:
             undefined {}
             other {({min_number_of_characters} caractères minimum)}
         }
+      ru: |
+        Создайте пароль {min_number_of_characters, select,
+            undefined {}
+            other {(min. {min_number_of_characters} минимальное количество символов)}
+        }
+      ua: |
+        Створіть пароль {min_number_of_characters, select,
+            undefined {}
+            other {(min. {min_number_of_characters} мінімум символів)}
+        }
       context: Password placeholder showed when user is signing up. Should be short enough to fit in a small input.
   email_check:
     link_invalid:
       en: This email check link is invalid.
       fr: Ce lien de vérification d'email est invalide.
+      ru: Ссылка для подтверждения электронной почты недействительна.
+      ua: Це посилання для підтвердження електронної пошти недійсне.
     link_expired:
       en: This email check link has expired.
       fr: Ce lien de vérification d'email n'est plus valable.
+      ru:
+      ua:
     already_checked:
       en: You’ve already checked your email with this link.
       fr: Ce lien de vérification d'email a déjà été utilisé.
+      ru: Эта ссылка для проверки электронной почты больше не действительна.
+      ua: Це посилання для підтвердження електронної пошти більше не дійсне.
     success:
       en: Your email address is now verified.
       fr: Votre adresse email a bien été validée.
+      ru: Ваш адрес электронной почты теперь подтвержден.
+      ua: Ваша електронна адреса підтверджена.
   password_reset:
     message:
       en: Please enter your new password.
       fr: Veuillez indiquer votre nouveau mot de passe.
+      ru: Пожалуйста, введите ваш новый пароль.
+      ua: Будь ласка, введіть ваш новий пароль.
     link_invalid:
       en: This password reset link is invalid.
       fr: Ce lien de redéfinition de mot de passe est invalide.
+      ru: Эта ссылка для сброса пароля недействительна.
+      ua: Це посилання для скидання пароля недійсне.
     already_reset:
       en: You’ve already reset your password with this link.
       fr: Ce lien de redéfinition de mot de passe a déjà été utilisé.
+      ru: Эта ссылка для сброса пароля уже была использована.
+      ua: Це посилання для скидання пароля вже використано.
     link_expired:
       en: This password reset link has expired.
       fr: Ce lien de redéfinition de mot de passe n'est plus valable.
+      ru: Это ссылка для сброса пароля больше не действительно.
+      ua: Це посилання для скидання пароля більше не дійсне.
     success:
       en: You can now log in with your new password.
       fr: Vous pouvez désormais vous connecter avec votre nouveau mot de passe.
+      ru: Теперь вы можете войти под своим новым паролем.
+      ua: Тепер ви можете увійти за допомогою нового пароля.
   error:
     missing:
       en: Please fill in your credentials.
       fr: Veuillez renseigner vos identifiants.
+      ru: Пожалуйста, заполните свои учетные данные.
+      ua: Будь ласка, заповніть свої облікові дані.
     incorrect:
       en: Please check your email address/password.
       fr: Votre email/mot de passe est erroné.
+      ru: Пожалуйста, проверьте ваш адрес электронной почты/пароль.
+      ua: Будь ласка, перевірте Вашу адресу електронної пошти/пароль.
     invalid_email:
       en: Please enter a valid email address.
       fr: Veuillez renseigner une adresse email valide.
+      ru: Пожалуйста, введите действительный адрес электронной почты.
+      ua: Будь ласка, введіть дійсну адресу електронної пошти.
     email_already_used:
       en: This email address is already used by another account.
       fr: L’adresse renseignée est déjà utilisée par un autre compte.
+      ru: Этот адрес электронной почты уже используется другой учетной записью.
+      ua: Ця електронна адреса вже використовується іншим користувачем.
       context: This can be useful to multi-account users trying to update their email address.

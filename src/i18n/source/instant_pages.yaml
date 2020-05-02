@@ -9,67 +9,109 @@ instant_pages:
     INSTANT_PAGE_PATH:
       en: ""
       fr: ""
+      ru: ""
+      ua: ""
     page_title:
       en: Help - {SERVICE_NAME}
       fr: Questions fréquentes - {SERVICE_NAME}
+      ru: Помощь - {SERVICE_NAME}
+      ua: Допомога - {SERVICE_NAME}
     # header is used in <h1> tag
     header:
       en: Help center
       fr: Centre d’aide
+      ru: Справочный центр
+      ua: Довідковий центр
     content[markdown]:
       en: ""
       fr: ""
+      ru: ""
+      ua: ""
     content__EDITOR_LABEL:
       en: Help page text
       fr: Contenu de la page d’aide
+      ru: Содержание страницы справки
+      ua: Зміст довідкової сторінки
   terms:
     # INSTANT_PAGE_PATH defaults to field name: 'terms'
     page_title:
       en: Terms - {SERVICE_NAME}
       fr: Conditions d’utilisation et mentions légales - {SERVICE_NAME}
+      ru: Условия - {SERVICE_NAME}
+      ua: Умови - {SERVICE_NAME}
     header:
       en: Terms of use
       fr: Conditions générales de service et d’utilisation
+      ru: Условия эксплуатации
+      ua: Умови користування
     last_update_date:
       en: "Last Updated: {date}"
       fr: "Dernière mise à jour\_: {date}"
+      ru: "Последнее обновление: {date}"
+      ua: "Останнє оновлення: {date}"
     content[markdown]:
       en: |-
         Available soon
       fr: |-
         Bientôt disponible
+      ru: |-
+        Скоро будет доступно
+      ua: |-
+        Доступно незабаром
     content__EDITOR_LABEL:
       en: Terms page text
       fr: Contenu des conditions et mentions légales
+      ru: Текст страницы условий
+      ua: Текст сторінки умов
   contact:
     # INSTANT_PAGE_PATH defaults to field name: 'contact'
     page_title:
       en: Contact {SERVICE_NAME}
       fr: Contactez-nous - {SERVICE_NAME}
+      ru: Зв'язатися {SERVICE_NAME}
+      ua: Зверніться до служби {SERVICE_NAME}
     header:
       en: Contact us
       fr: Contactez-nous
+      ru: Связаться с нами
+      ua: Зв'яжіться з нами
     header__EDITOR_LABEL:
       en: Contact page title
       fr: Titre de la page Contact
+      ru: Заголовок контактной страницы
+      ua: Заголовок сторінки контактів
     content[markdown]:
       en: ""
       fr: ""
+      ru: ""
+      ua: ""
     content__EDITOR_LABEL:
       en: Contact page text
       fr: Contenu de la page Contact
+      ru: Текст контактной страницы
+      ua: Текст контактної сторінки
   about_us:
     header:
       en: About us
       fr: Qui sommes-nous ?
+      ru: О нас
+      ua: Про нас
     subheader:
       en: About us
       fr: Qui sommes-nous ?
+      ru: О нас
+      ua: Про нас
     INSTANT_PAGE_PATH:
       en: about-us
       fr: about-us
+      ru: about-us
+      ua: about-us
     content[markdown]:
       en: |-
         Available soon
       fr: |-
         Bientôt disponible
+      ru: |-
+        Скоро будет доступно
+      ua: |-
+        Доступно незабаром

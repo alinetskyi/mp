@@ -2,27 +2,41 @@ stelace:
   powered_by:
     en: We run on
     fr: Expérience conçue par
+    ru: Мы работаем на 
+    ua: Ми працюємо на 
     context: Platform provider’s branding
   service_powered_by_stelace:
     en: "{SERVICE_NAME} runs on Stelace Λ"
     fr: "{SERVICE_NAME} s’appuie sur Stelace Λ"
+    ru: "{SERVICE_NAME} работаем на Stelace Λ"
+    ua: "{SERVICE_NAME} працюємо на Stelace Λ"
   platform_runner:
     en: Platform runner
     fr: Lanceur de plateformes Web
+    ru: Лаунчер платформы
+    ua: Лаунчер платформи
 places:
   near_place:
     en: "Near {place}"
     fr: "{place} & environs"
+    ru: "Рядом с {place}"
+    ua: "Біля {place}"
   here_marker_label:
     en: Here
     fr: Ici
+    ru: Здесь
+    ua: Тут
   location_examples:
     en: "Address, city, station…"
     fr: "Adresse, ville, gare…"
+    ru: "Адрес, город, вокзал…"
+    ua: "Адреса, місто, станція…"
     context: Illustrate search locations with some obvious examples
   address_placeholder:
     en: Address
     fr: Adresse
+    ru: Адрес
+    ua: Адреса
   distance_value:
     en: |
       {distance, select,
@@ -34,26 +48,48 @@ places:
         0 {< 1 km}
         other {{distance} km}
       }
+    ru: |
+      {distance, select,
+        0 {< 1 км}
+        other {{distance} км}
+      }
+    ua: |
+      {distance, select,
+        0 {< 1 км}
+        other {{distance} км}
+      }
   geolocation_errors:
     permission_denied:
       en: The geolocation has been denied. Please check your browser settings.
       fr: La géolocalisation a été bloquée. Veuillez vérifier les réglages de votre navigateur.
+      ru: Геолокация была отклонена. Пожалуйста, проверьте настройки своего браузера.
+      ua: Геолокація була відхилена. Будь ласка, перевірте налаштування свого браузера.
     position_unavailable:
       en: Your position cannot be determined. Please try again later.
       fr: Votre position n'a pu être trouvée. Veuillez réessayer plus tard.
+      ru: Ваша позиция не может быть определена. Пожалуйста, попробуйте позже.
+      ua: Вашу позицію неможливо визначити. Будь-ласка спробуйте пізніше.
   current_position:
     en: Current position
     fr: Position actuelle
+    ru: Текущая позиция
+    ua: Поточна позиція
 social:
   join_us:
     en: Join us
     fr: Rejoignez-nous
+    ru: Присоединяйтесь к нам
+    ua: Приєднайся до нас
   share_on_facebook:
     en: Share on Facebook
     fr: Partagez sur Facebook
+    ru: Поделиться в Facebook
+    ua: Поділитися у Facebook
   facebook_page:
     en: "{SERVICE_NAME} Facebook page"
     fr: "Page Facebook {SERVICE_NAME}"
+    ru: "{SERVICE_NAME} Facebook страница"
+    ua: "{SERVICE_NAME} Facebook сторінки"
   prompt_share_header:
     en: |
       {is_owner, select,
@@ -67,8 +103,22 @@ social:
           false {Vous aimez ?}
           other {}
       }
+    ru: |
+      {is_owner, select,
+          true {Поделитесь своим объявлением}
+          false {Вам нравится?}
+          other {}
+      }
+    ua: |
+      {is_owner, select,
+          true {Поділіться своїм оголошенням}
+          false {Вам подобається?}
+          other {}
+      }
 number:
   fraction:
     percent:
       en: "{hundredth, number, percent}"
       fr: "{hundredth, number, percent}"
+      ru: "{hundredth, number, percent}"
+      ua: "{hundredth, number, percent}"

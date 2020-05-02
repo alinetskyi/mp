@@ -2,25 +2,39 @@ transaction:
   impending_cancellation:
     en: Impending cancellation
     fr: Annulation imminente
+    ru: Предусмотреная отмена
+    ua: Передбачене скасування
   unavailable_periods:
     en: Unavailable periods
     fr: Périodes indisponibles
+    ru: Недоступные периоды
+    ua: Недоступні періоди
   remaining_time_to_accept:
     en: "{remainingTime} remaining to accept."
     fr: "Il ne vous reste que\_{remainingTime} pour accepter."
+    ru: "{remainingTime} осталось принять."
+    ua: "{remainingTime} залишилося прийняти."
   impending_cancellation_message:
     en: "The transaction cancellation is impending. Please accept or reject the request from {userName} or contact us if there is any problem."
     fr: "L'annulation de cette réservation est imminente. Merci d'accepter ou de refuser rapidement la demande de {userName} ou de nous contacter en cas de difficultés."
+    ru: "Отмена транзакции неизбежна. Пожалуйста, примите или отклоните запрос от {userName} или свяжитесь с нами, если возникли какие-либо проблемы"
+    ua: "Скасування транзакції неминуча. Будь ласка, прийміть або відхиліть запит від {userName} або зв'яжіться з нами, якщо виникли якісь проблеми"
   acceptance_success_title:
     en: Accepted
     fr: Demande acceptée
+    ru: Принято
+    ua: Прийнято
   rejection_success_title:
     en: Rejected
     fr: Demande rejetée
+    ru: Отклонено
+    ua: Відхилено
   summary:
     owner_net_amount:
       en: "Net amount for you: {price, number, currency}"
       fr: "Montant net vous revenant\_: {price, number, currency}"
+      ru: "Чистая сумма для вас: {price, number, currency}"
+      ua: "Чиста сума для вас: {price, number, currency}"
     taker_fees:
       en: |
         Service fees: {price, select,
@@ -30,6 +44,16 @@ transaction:
       fr: |
         Frais de service : {price, select,
             0 {Offerts}
+            other{{price, number, currency}}
+        }
+      ru: |
+        Сервисные сборы: {price, select,
+            0 {Бесплатно}
+            other{{price, number, currency}}
+        }
+      ua: |
+        Плата за обслуговування: {price, select,
+            0 {Безкоштовно}
             other{{price, number, currency}}
         }
     owner_fees:
@@ -43,79 +67,135 @@ transaction:
             0 {Frais de paiement : Offerts}
             other{Dont frais de paiement : {price, number, currency}}
         }
+      ru: |
+        {price, select,
+            0 {Платежная комиссия: Бесплатно}
+            other {Платежная комиссия включена: {price, number, currency}}
+        }
+      ua: |
+        {price, select,
+            0 {Платіжна комісія: Безкоштовно}
+            other {Платіжна комісія включена: {price, number, currency}}
+        }
     quantity:
       en: "Quantity: {quantity}"
       fr: "Quantity\_: {quantity}"
+      ru: "Количество: {quantity}"
+      ua: "Кількість: {quantity}"
     security_deposit:
       en: "Security deposit: {price, number, currency}"
       fr: "Caution\_: {price, number, currency}"
+      ru: "Гарантийный депозит: {price, number, currency}"
+      ua: "Гарантійний депозит: {price, number, currency}"
   status:
     label:
       en: Status
       fr: Statut
+      ru: Статус
+      ua: Статус
     draft:
       en: Pending
       fr: En attente
+      ru: В ожидании
+      ua: В очікуванні
     accepted:
       en: Accepted
       fr: Accepté
+      ru: Принято
+      ua: Прийнято
     rejected:
       en: Rejected
       fr: Rejeté
+      ru: Отклонено
+      ua: Відхилено
     pending:
       en: Pending
       fr: En attente
+      ru: В ожидании
+      ua: В очікуванні
     pending-acceptance:
       en: Pending
       fr: En attente
+      ru: В ожидании
+      ua: В очікуванні
     validated:
       en: Validated
       fr: Validé
+      ru: Подтверждено
+      ua: Підтверджено
     completed:
       en: Completed
       fr: Terminé
+      ru: Завершено
+      ua: Завершено
     cancelled:
       en: Cancelled
       fr: Annulé
+      ru: Отменено
+      ua: Скасовано
     withdrawn:
       en: Withdrawn
       fr: Rétracté
+      ru: Снято
+      ua: Знято
     information:
       en: Information
       fr: Information
+      ru: Информация
+      ua: Інформація
   status_message:
     cancelled:
       en: The transaction has been cancelled.
       fr: La réservation a été annulée.
+      ru: Транзакция была отменена.
+      ua: Транзакція була скасована.
     paid_and_accepted:
       en: A transaction has been accepted and paid on {date, date, short}.
       fr: Cette réservation a été acceptée et payée le {date, date, short}.
+      ru: Транзакция была принята и оплачена {date, date, short}.
+      ua: Транзакція була прийнята і оплачена {date, date, short}.
     paid_as_owner:
       en: The transaction has been paid by {userName}.
       fr: Cette réservation a été payée par {userName}.
+      ru: Транзакция была оплачена {userName}.
+      ua: Транзакція була оплачена {userName}.
     accepted_as_taker:
       en: The transaction has been accepted by {userName} on {acceptedDate, date, short}.
       fr: La réservation a été acceptée par {userName} le {acceptedDate, date, short}.
+      ru: Транзакция была принята  {userName} {acceptedDate, date, short}.
+      ua: Транзакція була прийнята {userName} {acceptedDate, date, short}.
     accepted_as_owner:
       en: You accepted the transaction.
       fr: Vous avez accepté cette réservation.
+      ru: Вы приняли транзакцию.
+      ua: Ви прийняли транзакцію.
   prompt:
     accept_button:
       en: Accept
       fr: Accepter
+      ru: Принять
+      ua: Прийняти
     reject_button:
       en: Reject
       fr: Refuser
+      ru: Відхилити
+      ua: Отклонить
     confirm_and_pay_button:
       en: Confirm
       fr: Confirmer
+      ru: Подтвердить
+      ua: Підтвердити
     withdraw_button:
       en: Withdraw
       fr: Se rétracter
+      ru: Снять
+      ua: Вивести
   error:
     own_listing_transaction:
       en: You cannot book your own listing.
       fr: Vous ne pouvez pas réserver pour votre propre annonce.
+      ru: Вы не можете забронировать собственное объявление.
+      ua: Ви не можете забронювати власне оголошення.
     minimum_duration:
       en: |
         The duration must be {timeUnit, select,
@@ -133,6 +213,22 @@ transaction:
             m{ {nbTimeUnits, plural, one{# minute} other{# minutes}} }
             other{}
         } au minimum.
+      ru: |
+        Продолжительность должна быть {timeUnit, select,
+            д{ {nbTimeUnits, plural, one{# день} other{# дней}} }
+            н{ {nbTimeUnits, plural, one{# ночь} other{# ночей}} }
+            ч{ {nbTimeUnits, plural, one{# час} other{# часов}} }
+            мин{ {nbTimeUnits, plural, one{# минута} other{# минут}} }
+            other{}
+        } по крайней мере.
+      ua: |
+        Тривалість повинна бутиe {timeUnit, select,
+            д{ {nbTimeUnits, plural, one{# день} other{# днів}} }
+            н{ {nbTimeUnits, plural, one{# ніч} other{# ночей}} }
+            г{ {nbTimeUnits, plural, one{# годину} other{# годин}} }
+            хв{ {nbTimeUnits, plural, one{# хвилина} other{# хвилин}} }
+            other{}
+        } принаймні.
     maximum_duration:
       en: |
         The duration must be {timeUnit, select,
@@ -149,6 +245,24 @@ transaction:
             h{ {nbTimeUnits, plural, one{# heure} other{# heures}} }
             m{ {nbTimeUnits, plural, one{# minute} other{# minutes}}
         } other{} } au maximum.
+      ru: |
+        Продолжительность должна быть {timeUnit, select,
+            д{ {nbTimeUnits, plural, one{# день} other{# дней}} }
+            н{ {nbTimeUnits, plural, one{# ночь} other{# ночей}} }
+            ч{ {nbTimeUnits, plural, one{# час} other{# часов}} }
+            мин{ {nbTimeUnits, plural, one{# минута} other{# минут}} }
+            other{}
+        } максимум.
+      ua: |
+        Тривалість повинна бутиe {timeUnit, select,
+            д{ {nbTimeUnits, plural, one{# день} other{# днів}} }
+            н{ {nbTimeUnits, plural, one{# ніч} other{# ночей}} }
+            г{ {nbTimeUnits, plural, one{# годину} other{# годин}} }
+            хв{ {nbTimeUnits, plural, one{# хвилина} other{# хвилин}} }
+            other{}
+        } максимум.
     unavailable_periods:
       en: The selected dates are not available.
       fr: Les dates sélectionnées ne sont pas disponibles.
+      ru: Выбранные даты недоступны.
+      ua: Вибрані дати недоступні.

@@ -3,12 +3,18 @@ error:
   unknown_happened_header:
     en: An error has happened.
     fr: Une erreur s'est produite.
+    ru: Произошла ошибка.
+    ua: Виникла помилка.
   unknown_happened:
     en: An error has happened and we will do our best to fix the issue. Please retry later.
     fr: Une erreur s'est produite et nous cherchons à résoudre le problème. Veuillez réessayer plus tard.
+    ru: Произошла ошибка, и мы сделаем все возможное, чтобы исправить проблему. Пожалуйста, попробуйте позже.
+    ua: Сталася помилка, і ми зробимо все можливе, щоб виправити проблему. Повторіть спробу пізніше.
   failed_updoad:
     en: File upload failed
     fr: Erreur lors du chargement de fichier
+    ru: Ошибка загрузки файла
+    ua: Не вдалося завантажити файл
   file_upload_duplicate_name:
     en: |
       You’ve already uploaded a file {name, select,
@@ -19,6 +25,16 @@ error:
       Vous avez déjà enregistré un fichier avec {name, select,
         undefined{le même nom}
         other{le nom « {name} ».}
+      }
+    ru: |
+      Вы уже загрузили файл {name, select,
+        undefined{с тем же именем}
+        other{это имя “{name}”.}
+      }
+    ua: |
+      Ви вже завантажили файл {name, select,
+        undefined{з такою ж назвою}
+        other{це ім'я “{name}”.}
       }
   file_upload_size_limit:
     en: |
@@ -39,22 +55,52 @@ error:
         other {(Maximum {limit, number} Mo)}
         undefined {}
       }
+    ru: |
+      Ваш файл
+      {file_name, select,
+        other {“{file_name}”}
+        undefined {}
+      } слишком большой {limit, select,
+        other {(максимум {limit, number} МБ)}
+        undefined {}
+      }
+    ua: |
+      Ваш файл
+      {file_name, select,
+        other {“{file_name}”}
+        undefined {}
+      } занадто великий {limit, select,
+        other {(максимум {limit, number} МБ)}
+        undefined {}
+      }
   invalid_code:
     en: This code is invalid.
     fr: Ce code est erroné.
+    ru: Этот код недействителен.
+    ua: Цей код недійсний.
   map_loading_error:
     en: Map service unavailable
     fr: Carte indisponible
+    ru: Сервис карт недоступен
+    ua: Сервіс карт недоступний
   not_authorized_page:
     en: Sorry, you can't access the previous page.
     fr: Désolé, vous n'avez pas accès à la page précédente.
+    ru: Извините, вы не можете получить доступ к предыдущей странице.
+    ua: На жаль, ви не можете отримати доступ до попередньої сторінки.
   login_to_access_page:
     en: Log in to access the previous page.
     fr: Connectez-vous pour accéder à la page précédente.
+    ru: Войдите, чтобы получить доступ к предыдущей странице.
+    ua: Увійдіть, щоб отримати доступ до попередньої сторінки.
   javascript_required:
     en: Please enable JavaScript to use {SERVICE_NAME}.
     fr: Veuillez activer JavaScript pour profiter de {SERVICE_NAME}.
+    ru: Пожалуйста, включите JavaScript, чтобы использовать {SERVICE_NAME}.
+    ua: Будь ласка, включите JavaScript, щоб використовувати {SERVICE_NAME}.
     context: Injected in first HTML loaded in case user disables JavaScript.
   user_session_expired:
     en: Your session has expired. Please log in again.
     fr: Votre session a expiré. Merci de vous reconnecter.
+    ru: Время сеанса истекло. Пожалуйста, войдите снова.
+    ua: Час сеансу минув. Будь ласка, увійдіть знову.

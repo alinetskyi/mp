@@ -5,19 +5,46 @@ instant:
       reference_label:
         en: Reference
         fr: Référence
+        ru: Ссылки
+        ua: Посилання
       brand_label:
         en: Brand
         fr: Marque
+        ru: Бренд
+        ua: Бренд
       dimension_label:
         en: Dimension
         fr: Dimensions
+        ru: Размер
+        ua: Розмір
       transport_label:
         en: Freight included
         fr: Transport fourni
+        ru: Доставка включена
+        ua: Доставка включена
       # Housing marketplace
       passive_label:
         en: Passive House
         fr: Habitat passif
+        ru: Пассивное жилье
+        ua: Пасивне житло
       scenery_label:
         en: Breathtaking Scenery
         fr: Paysage unique
+        ru: Захватывающий пейзаж
+        ua: Захоплюючий пейзаж
+      bulk_label:
+        en: Sold in Bulk
+        fr: Sold in Bulk
+        ru: Опт
+        ua: Опт
+      weight_label:
+        en: Sold by weight
+        fr: Sold by weight
+        ru: На развес
+        ua: На вагу
+      item_label:
+        en: Sold by item
+        fr: Sold by item
+        ru: Поштучно
+        ua: Поштучно

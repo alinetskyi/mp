@@ -3,91 +3,145 @@ pages:
     page_title:
       en: "Welcome to {SERVICE_NAME}"
       fr: "Bienvenue sur {SERVICE_NAME}"
+      ru: "Добро пожаловать в  {SERVICE_NAME}"
+      ua: "Ласкаво просимо в {SERVICE_NAME}"
       context: Default website title
     page_title__EDITOR_LABEL:
       en: Title of your website
       fr: Titre de votre site
+      ru: Название вашего сайта
+      ua: Назва вашого веб-сайту
     page_title__EDITOR_HELPER:
       en: As shown in Web browser and search engine results such as Google.
       fr: Apparaît dans votre navigateur Web ainsi que dans les résultats des moteurs de recherche tels que Google.
+      ru: Как показано в веб-браузере и результатах поисковых систем, таких как Google.
+      ua: Як показано в веб-браузері і результатах пошукових систем, таких як Google.
     meta_description:
       en: "Your community awaits you on {SERVICE_NAME}"
       fr: "Rejoignez la communauté {SERVICE_NAME}"
+      ru: "Ваше сообщество ждет вас в {SERVICE_NAME}"
+      ua: "Ваше співтовариство чекає вас в {SERVICE_NAME}"
       context: This is a very generic default that should be replaced by admin before platform is online.
     header:
       en: "Welcome to {SERVICE_NAME}"
       fr: "Bienvenue sur {SERVICE_NAME}"
+      ru: "Добро пожаловать в  {SERVICE_NAME}"
+      ua: "Ласкаво просимо в {SERVICE_NAME}"
       context: Default home page header (H1)
     header__EDITOR_LABEL:
       en: Main header of your home page
       fr: En-tête principal de votre page d’accueil
+      ru: Главный заголовок вашей домашней страницы
+      ua: Головний заголовок вашої домашньої сторінки
     header__EDITOR_HELPER:
       en: Try to describe your activity precisely to improve your SEO.
       fr: Essayez de décrire votre activité précisément pour améliorer votre référencement.
+      ru: Постарайтесь точно описать свою деятельность, чтобы улучшить SEO.
+      ua: Постарайтеся точно описати свою діяльність, щоб поліпшити SEO.
     subheader:
       en: Your community
       fr: Votre communauté
+      ru: Ваше сообщество
+      ua: Ваше спільнота
     subheader__EDITOR_LABEL:
       en: Subheader of your website
       fr: En-tête secondaire
+      ru: Подзаголовок вашего сайта
+      ua: Підзаголовок вашого веб-сайту
     form_button:
       en: Search
       fr: Rechercher
+      ru: Поиск
+      ua: Пошук
     form_button__EDITOR_LABEL:
       en: Home search form button
       fr: Bouton du formulaire de recherche de la page d’accueil
+      ru: Кнопка формы поиска на главной странице
+      ua: Кнопка форми пошуку на домашній сторінці
     main_text_content:
       en: ""
       fr: ""
+      ru: ""
+      ua: ""
     main_text_content__EDITOR_LABEL:
       en: Main content of your home page
       fr: Contenu principal de votre page d’accueil
+      ru:
+      ua:
     asset_gallery_header:
       en: Available on {SERVICE_NAME}
       fr: Disponible sur {SERVICE_NAME}
+      ru: Основное содержание вашей домашней страницы
+      ua: Основний зміст вашої домашньої сторінки
       context: Introducing some assets as sample on home page
     testimonials_header:
       en: They trust us
       fr: Ils nous font confiance
+      ru: Они доверяют нам
+      ua: Вони нам довіряють
     features:
       feature_1_title:
         en: Title
         fr: Titre
+        ru: Название
+        ua: Назва
       feature_1_content:
         en: Feature 1
         fr: Présentation 1
+        ru: Особенность 1
+        ua: Особливість 1
       feature_2_title:
         en: Title
         fr: Titre
+        ru: Название
+        ua: Назва
       feature_2_content:
         en: Feature 2
         fr: Présentation 2
+        ru: Особенность 2
+        ua: Особливість 2
       feature_3_title:
         en: Title
         fr: Titre
+        ru: Название
+        ua: Назва
       feature_3_content:
         en: Feature 3
         fr: Présentation 3
+        ru: Особенность 3
+        ua: Особливість 3
   new_asset:
     page_title:
       en: New listing - {SERVICE_NAME}
       fr: Nouvelle annonce {SERVICE_NAME}
+      ru: Новое объявление - {SERVICE_NAME}
+      ua: Нове оголошення - {SERVICE_NAME}
       context: Window/Tab title (SEO).
     meta_description:
       en: Create your own listing in no time.
       fr: Créez votre propre annonce en quelques instants.
+      ru: Создайте собственное объявление за считанные секунды.
+      ua: Створіть власне оголошення за лічені секунди.
     header:
       en: Create your new offer
       fr: Créez votre nouvelle annonce
+      ru: Создайте новое объявление
+      ua: Створіть нове оголошення
     header__EDITOR_LABEL:
       en: Main header of your listing creation page
       fr: En-tête principal de la page création d'annonce
+      ru: Основной заголовок создания объявлений на странице
+      ua: Основний заголовок створення оголошень на сторінці
     subheader:
       en: It’s fast and free.
       fr: C’est simple et gratuit.
+      ru: Это просто и бесплатно.
+      ua: Це просто і безкоштовно.
     form_header:
       en: Everything starts with a good title
       fr: Tout commence par un bon titre
+      ru: Все начинается с хорошего названия
+      ua: Все починається з хорошої назви
     publication_status:
       en: |
         {published, select,
@@ -101,12 +155,28 @@ pages:
             now {Votre annonce vient d’être publiée.}
             other {}
         }
+      ru: |
+        {published, select,
+            after_validation {Ваше объявление будет опубликовано после проверки {SERVICE_NAME}}
+            now {Ваше объявление только что опубликовано.}
+            other {}
+        }
+      ua:  |
+        {published, select,
+            after_validation {Ваше оголошення буде опубліковано після перевірки {SERVICE_NAME}}
+            now {Ваше оголошення щойно опубліковане.}
+            other {}
+        }
     picture_incentive:
       en: Beautiful pictures make a difference…
       fr: De belles images font la différence…
+      ru: Красивые картинки делают разницу…
+      ua: Красиві картинки роблять різницю…
     picture_incentive__EDITOR_LABEL:
       en: "Incentive to upload attractive images"
       fr: "Incitation à présenter des images de qualité"
+      ru: "Стимул загрузить привлекательные изображения"
+      ua: "Стимул завантажити привабливі зображення"
   search:
     page_title:
       en: |
@@ -131,6 +201,28 @@ pages:
             undefined {}
             other { - Page {page}}
         }
+      ru: |
+        Поиск
+        {query, select,
+            undefined {}
+            other {{query}}
+        }
+        - {SERVICE_NAME}
+        {page, select,
+            undefined {}
+            other { - Страница {page}}
+        }
+      ua: |
+        Пошук
+        {query, select,
+            undefined {}
+            other {{query}}
+        }
+        - {SERVICE_NAME}
+        {page, select,
+            undefined {}
+            other { - Сторінка {page}}
+        }
     meta_description:
       en: |
         {query, select,
@@ -152,35 +244,73 @@ pages:
             undefined {}
             other { - Page {page}}
         }
+      ru: |
+        {query, select,
+            undefined {}
+            other {{query}:}
+        }
+        Найдите то, что вам нужно на {SERVICE_NAME}
+        {page, select,
+            undefined {}
+            other { - Страница {page}}
+        }
+      ua: |
+        {query, select,
+            undefined {}
+            other {{query}:}
+        }
+        Знайдіть те, що вам потрібно на {SERVICE_NAME}
+        {page, select,
+            undefined {}
+            other { - Сторінка {page}}
+        }
     show_map:
       en: Show map
       fr: Afficher la carte
+      ru: Показать карту
+      ua: Показати карту
       context: Option to show map interface on search page
     search_after_map_move:
       en: Search as I move the map
       fr: Rechercher quand je déplace la carte
+      ru: Ищите, когда я перемещаю карту
+      ua: Шукайте під час переміщення карти
     redo_search:
       en: Redo search here
       fr: Relancer la recherche ici
+      ru: Повторить поиск здесь
+      ua: Повторити пошук тут
   transaction_payment:
     page_title:
       en: Checkout - {SERVICE_NAME}
       fr: Paiement - {SERVICE_NAME}
+      ru: Оформить заказ - {SERVICE_NAME}
+      ua: Оформити замовлення - {SERVICE_NAME}
     header:
       en: Checkout
       fr: Paiement
+      ru: Оплата
+      ua: Оплата
     header__EDITOR_LABEL:
       en: Checkout page title
       fr: Titre de la page de paiement
+      ru: Название платежной страницы
+      ua: Назва сторінки платежу
     header_deposit:
       en: Deposit
       fr: Dépôt de garantie
+      ru: Депозит
+      ua: Депозит
     billing_information:
       en: Billing information
       fr: Informations de facturation
+      ru: Платежная информация
+      ua: Платіжна інформація
     country_of_residence_label:
       en: Country of residence
       fr: Pays de résidence
+      ru: Страна проживания
+      ua: Країна проживання
     payment_secured_by:
       en: |
         Your payment details are encrypted and secured by {payment_provider, select,
@@ -192,40 +322,72 @@ pages:
           stripe {Stripe.}
           other {notre prestataire de paiement accrédité.}
         }
+      ru: |
+        Ваши платежные реквизиты зашифрованы и защищены {payment_provider, select,
+          stripe {Stripe.}
+          other {нашим сертифицированный поставщиком платежей.}
+        }
+      ua: |
+        Ваші платіжні реквізити шифруються і захищені {payment_provider, select,
+          stripe {Stripe.}
+          other {нашим сертифікований постачальником платежів.}
+        }
     accept_payment_statement:
       en: "I accept to pay {price, number, currency}."
       fr: "J’accepte de payer {price, number, currency}."
+      ru: "Я согласен заплатить {price, number, currency}."
+      ua: "Я згоден заплатити {price, number, currency}."
     accept_payment_statement__EDITOR_LABEL:
       en: Payment statement
       fr: Accord pour paiement
+      ru: Платежная ведомость
+      ua: Виписка про оплату
     accept_deposit_statement:
       en: "I accept that a {deposit, number, currency} deposit is required. It won’t be debited from my account except in case of a disputed moderated by {SERVICE_NAME}."
       fr: "J’accepte qu’un dépôt de garantie (caution) de {deposit, number, currency} soit bloqué sur ma carte bancaire. Celui-ci ne sera en aucun cas prélevé en l’absence de litige avéré constaté par {SERVICE_NAME}."
+      ru: "Я согласен с тем, что требуется депозит {deposit, number, currency}. Он не будет списан с моего аккаунта, за исключением спорных случаев, модерируемых {SERVICE_NAME}."
+      ua: "Я згоден з тим, що потрібен депозит {deposit, number, currency}. Він не буде списаний з мого аккаунта, за винятком спірних випадків, модерованих {SERVICE_NAME}."
     accept_deposit_statement__EDITOR_LABEL:
       en: Deposit statement
       fr: Accord pour le dépôt de garantie
+      ru: Депозитная выписка
+      ua: Виписка про депозит
     confirm_payment_button:
       en: Confirm payment
       fr: Confirmer et payer
+      ru: Подтвердите оплату
+      ua: Підтвердьте оплату
     3DSecure_logo_alt:
       en: 3DSecure Visa / MasterCard logo
       fr: Logo 3DSecure Visa / MasterCard
+      ru: 3DSecure Visa / MasterCard лого
+      ua: 3DSecure Visa / MasterCard лого
     3DSecure_message:
       en: Your bank may require 3DSecure authentication to secure your payment.
       fr: Pour garantir votre sécurité, votre banque est susceptible de procéder à une vérification 3DSecure.
+      ru: Ваш банк может потребовать аутентификацию 3DSecure для обеспечения безопасности вашего платежа.
+      ua: Ваш банк може вимагати аутентифікацію 3DSecure для захисту платежу.
   transaction_confirmation:
     page_title:
       en: "Payment {status, select, confirmed {confirmed} cancelled {cancelled} other{}}"
       fr: "Paiement {status, select, confirmed {confirmé} cancelled {annulé} other{}}"
+      ru: "Платеж {status, select, confirmed {confirmed} cancelled {отменен} other{}}"
+      ua: "Платіж {status, select, confirmed {confirmed} cancelled {скасований} other{}}"
     payment_processing_message:
       en: Validation pending…
       fr: Vérification en cours…
+      ru: Ожидается подтверждение…
+      ua: Перевірка триває…
     payment_success_message:
       en: Payment successful
       fr: Transaction réussie
+      ru: Оплата успешна
+      ua: Оплата успішна
     generic_error:
       en: An error has happened and we apologize for any inconvenience. Your card hasn't been debited.
       fr: Une erreur s'est produite et nous vous prions de nous en excuser. Aucun prélèvement ne sera effectué.
+      ru: Произошла ошибка, и мы приносим свои извинения за доставленные неудобства. Списание с Вашей карты не произошло. 
+      ua: Сталася помилка, ми вибачаємось за незручності. Списання з Вашої картки не вiдбулося.
   public_profile:
     page_title:
       en: |
@@ -238,6 +400,18 @@ pages:
         {user, select,
             undefined {Profil}
             other {Profil de {user}}
+        }
+        - {SERVICE_NAME}
+      ru: |
+        {user, select,
+            undefined {Профиль}
+            other {{user}’s профиль}
+        }
+        - {SERVICE_NAME}
+      ua: |
+        {user, select,
+            undefined {Профіль}
+            other {{user}’s профіль}
         }
         - {SERVICE_NAME}
     meta_description:
@@ -269,6 +443,34 @@ pages:
             }
             other {{user_description}}
         }
+      ru: |
+        {user_description, select,
+            undefined {
+                {user, select,
+                    undefined {Присоединился}
+                    other {{user} присоединился}
+                }
+                {SERVICE_NAME} {signup_date, select,
+                  undefined {}
+                  other {с {signup_date, date, fullmonth}}
+                }.
+            }
+            other {{user_description}}
+        }
+      ua: |
+        {user_description, select,
+            undefined {
+                {user, select,
+                    undefined {Приєднався}
+                    other {{user} приєднався}
+                }
+                {SERVICE_NAME} {signup_date, select,
+                  undefined {}
+                  other {з {signup_date, date, fullmonth}}
+                }.
+            }
+            other {{user_description}}
+        }
       context: User can provide her own description.
     greeting:
       en: |
@@ -281,96 +483,162 @@ pages:
             undefined {}
             other {, je suis {user}}
         }
+      ru: |
+        Добро пожаловать  {user, select,
+            undefined {}
+            other {, я {user}}
+        }
+      ua: |
+        Ласкаво просимо  {user, select,
+            undefined {}
+            other {, я {user}}
+        }
     greeting__EDITOR_LABEL:
       en: Public profile page title
       fr: Titre de la page de profil public
+      ru: Название страницы публичного профиля
+      ua: Назва сторінки публічного профілю
   account:
     page_title:
       en: My account - {SERVICE_NAME}
       fr: Mon compte {SERVICE_NAME}
+      ru: Мой аккаунт - {SERVICE_NAME}
+      ua: Мій аккаунт - {SERVICE_NAME}
     greeting:
       en: Welcome back {firstname, select, undefined {} other {{firstname}}}
       fr: Bienvenue sur {SERVICE_NAME} {firstname, select, undefined {} other {{firstname}}}
+      ru: Добро пожаловать обратно {firstname, select, undefined {} other {{firstname}}}
+      ua: Ласкаво просимо назад {firstname, select, undefined {} other {{firstname}}}
       context: User can have no name yet.
     greeting__EDITOR_LABEL:
       en: Greeting message of account page
       fr: Message d’accueil du compte utilisateur
+      ru: Приветственное сообщение аккаунта пользователя
+      ua: Вітальне повідомлення аккаунту користувача
     greeting_subtitle:
       en: Keep your account info up-to-date and don’t miss a single opportunity.
       fr: Maintenez vos informations à jour pour ne rien rater.
+      ru: Регулярно обновляйте данные своей учетной записи и не упускайте ни одной возможности.
+      ua: Оновлюйте інформацію свого облікового запису та не пропустіть жодної можливості.
     greeting_subtitle__EDITOR_LABEL:
       en: Account page subtitle
       # '\_' inserts a non-breaking space
       fr: "Sous-titre de la page «\_Mon Compte\_»"
+      ru: Подзаголовок страницы учетной записи
+      ua: Підзаголовок сторінки облікового запису
   invite:
     page_title:
       en: Your friends on {SERVICE_NAME}
       fr: Vos amis sur {SERVICE_NAME}
+      ru: Ваши друзья в {SERVICE_NAME}
+      ua: Ваші друзі в {SERVICE_NAME}
     meta_description:
       en: Invite your friends to join {SERVICE_NAME}.
       fr: Invitez vos amis à rejoindre {SERVICE_NAME.
+      ru: Пригласите своих друзей присоединиться к  {SERVICE_NAME}.
+      ua: Запросіть своїх друзів приєднатися до {SERVICE_NAME}.
   friend_referral:
     page_title:
       en: "{user, select, undefined {Invitation} other {{user}’s invitation}} - {SERVICE_NAME}"
       fr: "{user, select, undefined {Invitation} other {Invitation de {user}}} - {SERVICE_NAME}"
+      ru: "{user, select, undefined {Invitation} other {{user}’s приглашение}} - {SERVICE_NAME}"
+      ua: "{user, select, undefined {Invitation} other {{user}’s запрошення}} - {SERVICE_NAME}"
     meta_description:
       en: "{user, select, undefined {You are invited} other {{user} invites you}} to join {SERVICE_NAME}."
       fr: "{user, select, undefined {Vous avez reçu une invitation à rejoindre } other {{user} vous invite sur}} {SERVICE_NAME}."
+      ru: "{user, select, undefined {Вы приглашены} other {{user} приглашает Вас}} to join {SERVICE_NAME}."
+      ua: "{user, select, undefined {Ви запрошені} other {{user} запрошує Вас}} to join {SERVICE_NAME}."
   not_found:
     page_title:
       en: Page not found - {SERVICE_NAME}
       fr: Page introuvable - {SERVICE_NAME}
+      ru: Страница не найдена - {SERVICE_NAME}
+      ua: Сторінку не знайдено - {SERVICE_NAME}
     header:
       en: Lost in {SERVICE_NAME}
       fr: Lost in {SERVICE_NAME}
+      ru: Потерян в {SERVICE_NAME}
+      ua: Загублено в {SERVICE_NAME}
     subheader:
       en: Page requested may be lost.
       fr: La page que vous cherchez est introuvable.
+      ru: Страница, которую вы ищете, не может быть найдена.
+      ua: Сторінку, яку ви шукаєте, неможливо знайти.
     404_error_label:
       en: 404 error - Page Not Found
       fr: Erreur 404 - Page introuvable
+      ru: Ошибка 404 - страница не найдена
+      ua: Помилка 404 - Сторінка не знайдена
     custom_error_code_label:
       en: "{errorCode, select, undefined {} other {{errorCode}}} Error"
       fr: Erreur {errorCode, select, undefined {} other {{errorCode}}}
+      ru: "{errorCode, select, undefined {} other {{errorCode}}} ошибка"
+      ua: "{errorCode, select, undefined {} other {{errorCode}}} помилка"
   inbox:
     page_title:
       en: Inbox
       fr: Messagerie
+      ru: Входящие
+      ua: Вхідні
     inbox_header:
       en: Inbox
       fr: Boîte de réception
+      ru: Входящие
+      ua: Вхідні
     transactions_header:
       en: My transactions
       fr: Mes transactions
+      ru: Мои транзакции
+      ua: Мої транзакції
     empty_inbox:
       en: Outgoing and incoming messages will be displayed on this page.
       fr: Lorsque vous enverrez ou recevrez des demandes, les réponses reçues s'afficheront ici.
+      ru: Исходящие и входящие сообщения будут отображаться на этой странице.
+      ua: На цій сторінці будуть відображатися вихідні та вхідні повідомлення.
     conversation_with:
       en: Conversation {interlocutorName, select, undefined {} other {with {interlocutorName}}}
       fr: Conversation {interlocutorName, select, undefined {} other {avec {interlocutorName}}}
+      ru: Разговор {interlocutorName, select, undefined {} other {с {interlocutorName}}}
+      ua: Розмова {interlocutorName, select, undefined {} other {з {interlocutorName}}}
     message_to:
       en: Message {interlocutorName, select, undefined {} other {to {interlocutorName}}}
       fr: Message {interlocutorName, select, undefined {} other {à {interlocutorName}}}
+      ru: Сообщение {interlocutorName, select, undefined {} other {к {interlocutorName}}}
+      ua: Повідомлення {interlocutorName, select, undefined {} other {до {interlocutorName}}}
     contact_details_hidden_title:
       en: Contact details protected
       fr: Coordonnées protégées
+      ru: Контактная информация защищена
+      ua: Контактні дані захищені
     contact_details_hidden_message:
       en: Contact details are hidden before the acceptance of that transaction as a security measure.
       fr: Les coordonnées sont masquées par mesure de sécurité avant la validation de cette transaction.
+      ru: Контактная информация скрыта по соображениям безопасности до подтверждения этой транзакции.
+      ua: Контактні дані маскуються з міркувань безпеки перед підтвердженням цієї транзакції.
     filter:
       all:
         en: All conversations
         fr: Toutes les conversations
+        ru: Все разговоры
+        ua: Усі бесіди
       active:
         en: Active conversations
         fr: Conversations actives
+        ru: Активные разговоры
+        ua: Активні бесіди
       archived:
         en: Archived conversations
         fr: Conversations archivées
+        ru: Архивные разговоры
+        ua: Архівні бесіди
       unread:
         en: Unread messages
         fr: Avec messages non lus
+        ru: Непрочитанные сообщения
+        ua: Непрочитані повідомлення
   conversation:
     page_title:
       en: Conversation
       fr: Conversation
+      ru: Разговор
+      ua: Розмова

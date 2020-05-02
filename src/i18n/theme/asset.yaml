@@ -14,3 +14,17 @@ asset:
           other {Acheter}
           undefined {Contacter}
       }
+    ru: |
+      {timeBased, select,
+          true {Резервировать}
+          false {Купить}
+          other {Купить}
+          undefined {Связаться}
+      }
+    ua: |
+      {timeBased, select,
+          true {Резервувати}
+          false {Купити}
+          other {Купити}
+          undefined {Зв'язатися}
+      }

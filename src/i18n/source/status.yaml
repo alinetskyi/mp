@@ -3,17 +3,27 @@ status:
   validated:
     en: Validated
     fr: Valide
+    ru: Подтверждено
+    ua: Підтверджено
     context: Shows that some piece information has been checked.
   archived:
     en: Archived
     fr: Archivé
+    ru: Заархивированно
+    ua: Заархівовано
   uploading_images:
     en: Uploading images…
     fr: Chargement des images en cours…
+    ru: Загрузка изображений…
+    ua: Завантаження зображень…
     context: Displayed until upload to servers is complete.
   no_results:
     en: No results
     fr: Aucun résultat
+    ru: Нет результатов
+    ua: Немає результатів
   loading:
     en: Loading
     fr: Chargement en cours
+    ru: Загрузка
+    ua: Завантаження

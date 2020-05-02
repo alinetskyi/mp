@@ -2,66 +2,106 @@ asset:
   name_label:
     en: Title
     fr: Titre
+    ru: Название
+    ua: Назва
     context: Asset name used as title of asset page
   asset_type_label:
     en: Asset type
     fr: Type de ressource
+    ru: Тип ресурса
+    ua: Тип ресурсу
   available_in_places:
     en: "Available in {places}"
     fr: "Disponible à {places}"
+    ru: "Доступно в {places}"
+    ua: "Доступно в {places}"
     context: Introduce places where asset is available.
   category_label:
     en: Category
     fr: Catégorie
+    ru: Категория
+    ua: Категорія
   subcategory_label:
     en: Subcategory
     fr: Sous-Catégorie
+    ru: Подкатегория
+    ua: Підкатегорія
   description_label:
     en: Description
     fr: Description
+    ru: Описание
+    ua: Опис
   accessories_label:
     en: Accessories
     fr: Accessoires
+    ru: Аксессуары
+    ua: Аксесуари
   quantity_label:
     en: Quantity
     fr: Quantité
+    ru: Количество
+    ua: Кількість
   condition_label:
     en: Condition
     fr: État
+    ru: Состояние
+    ua: Стан
   security_deposit_label:
     en: Security deposit
     fr: Dépôt de garantie
+    ru: Залог
+    ua: Застава
   comments:
     en: Comments
     fr: Commentaires
+    ru: Комментарии
+    ua: Коментарі
     context: Comments or questions & answers about current asset.
   contact_owner_action:
     en: "Contact {owner}"
     fr: "Contacter {owner}"
+    ru: "Связаться с {owner}"
+    ua: "Зв'язатися з {owner}"
   owner_info_header:
     en: "Offered by {owner}"
     fr: "Informations sur {owner}"
+    ru: "Предложено {owner}"
+    ua: "Пропонується {owner}"
   response_rate_label:
     en: "Response rate:"
     fr: "Taux de réponse\_:"
+    ru: "Скорость отклика:"
+    ua: "Швидкість відгуку:"
   response_time_label:
     en: "Response time:"
     fr: "Temps de réponse\_:"
+    ru: "Время отклика:"
+    ua: "Час відгуку:"
   reviews:
     en: Reviews
     fr: Évaluations
+    ru: Отзывы
+    ua: Відгуки
   keywords:
     en: Related keywords
     fr: Mots-clés
+    ru: Ключевые слова
+    ua: Ключові слова
   similar_assets:
     en: Similar offers
     fr: Offres similaires
+    ru: Подобные предложения
+    ua: Подібні пропозиції
   other_assets_from:
     en: Other offers {owner, select, undefined{} other{from {owner}}}
     fr: Autres offres {owner, select, undefined{} other{de {owner}}}
+    ru: Другие предложения {owner, select, undefined{} other{from {owner}}}
+    ua: Інші пропозиції {owner, select, undefined{} other{from {owner}}}
   you_may_like:
     en: You may like…
     fr: "{SERVICE_NAME} recommande…"
+    ru: Вам может понравиться…
+    ua: Вам може сподобатися…
     context: Introducing automatic asset suggestions depending on user profile or history.
   view_own_listings:
     en: |
@@ -75,6 +115,18 @@ asset:
           =0 {mes annonces}
           one {mon annonce}
           other {# annonces}
+      }
+    ru: |
+      Посмотреть мои {nb_listings, plural,
+          =0 {listings}
+          one {listing}
+          other {# listings}
+      }
+    ua: |
+      Переглянути мої {nb_listings, plural,
+          =0 {listings}
+          one {listing}
+          other {# listings}
       }
   checkout_action:
     en: |
@@ -91,9 +143,25 @@ asset:
           other {Commander}
           undefined {Contacter}
       }
+    ru: |
+      {timeBased, select,
+          true {Резервировать}
+          false {Купить}
+          other {Купить}
+          undefined {Связаться}
+      }
+    ua: |
+      {timeBased, select,
+          true {Резервувати}
+          false {Купити}
+          other {Купити}
+          undefined {Зв'язатися}
+      }
   delete_listing_warning:
     en: "Please confirm you want to delete this listing."
     fr: "Confirmez-vous la suppression de cette annonce?"
+    ru: "Вы подтверждаете удаление этого объявления?"
+    ua: "Ви підтверджуєте видалення цього оголошення?"
   delete_listing_and_transactions_warning:
     en: |
       The deletion of this listing will cancel associated ongoing transactions.
@@ -101,43 +169,71 @@ asset:
     fr: |
       La suppression de cette annonce entraînera l’annulation des transactions en cours.
       Confirmez-vous la suppression de cette annonce?
+    ru: |
+      Удаление этого объявления приведет к аннулированию ожидающих транзакций.
+      Вы подтверждаете удаление этого объявления?
+    ua: |
+      Видалення цього оголошення призведе до анулювання очікуючих транзакцій.
+      Ви підтверджуєте видалення цього оголошення?
   not_available_now:
     en: Not available for now
     fr: Indisponible pour le moment
+    ru: Недоступно на данный момент
+    ua: На даний момент недоступний
   not_available_anymore:
     en: This listing is not available anymore.
     fr: Cette annonce n’est plus disponible.
+    ru: Это объявление больше не доступно.
+    ua: Це оголошення більше не доступне.
   remove_action:
     en: Remove
     fr: Supprimer
+    ru: Удалить
+    ua: Видалити
   pause_action:
     en: Pause
     fr: Mettre en pause
+    ru: Пауза
+    ua: Пауза
   reactivate_action:
     en: Reactivate
     fr: Réactiver
+    ru: Возобновить
+    ua: Відновити
     context: Opposite to pause_action
   pause_action_helper:
     en: Deactivate your listing when you are unavailable
     fr: Suspendez votre annonce en cas d’indisponibilité
+    ru: Деактивировать свое объявление, когда вы недоступны
+    ua: Деактивуйте своє оголошення, коли ви недоступні
   paused:
     en: Paused
     fr: En pause
+    ru: Приостановлено
+    ua: Призупинено
   pending_validation:
     en: Pending
     fr: En attente
+    ru: В ожидании
+    ua: В очікуванні
     context: Asset or asset owner account must be validated.
   unavailable:
     en: Unavailable
     fr: Indisponible
+    ru: Недоступно
+    ua: Недоступно
     context: The asset is sold, or equivalent depending on business, with no unit available to other users anymore.
   notification:
     removed_success_message:
       en: Removed listing
       fr: Annonce supprimée
+      ru: Объявление удалено
+      ua: Оголошення видалено
     activated_success_message:
       en: Listing activated
       fr: Annonce activée
+      ru: Объявление активировано
+      ua: Оголошення активовано
     paused_success_message:
       en: |
         Listing paused {paused_until_date, select,
@@ -149,13 +245,29 @@ asset:
             undefined {}
             other {jusqu’au {paused_until_date, date, short}}
         }
+      ru: |
+        Объявление отключено {paused_until_date, select,
+            undefined {}
+            other {until {paused_until_date, date, short}}
+        }
+      ua: |
+        Оголошення вимкнено {paused_until_date, select,
+            undefined {}
+            other {until {paused_until_date, date, short}}
+        }
     sold:
       en: Sold
       fr: Vendu
+      ru: Продано
+      ua: Продано
   owner_stats:
     views:
       en: "{views, plural, =0 {No view} one {One view} other {# views}}"
       fr: "{views, plural, =0 {Aucune vue} one {Une vue} other {# vues}}"
+      ru: "{views, plural, =0 {Нет просмотров} one {Один просмотр} other {# просмотры}}"
+      ua: "{views, plural, =0 {Немає переглядів} one {Один перегляд} other {# перегляди}}"
     contacts:
       en: "{contacts, plural, =0 {No contact} one {One contact} other {# contacts}} for this listing."
       fr: "{contacts, plural, =0 {Aucun contact} one {Un contact} other {# contacts}} pour cette annonce."
+      ru: "{contacts, plural, =0 {Нет контакта} one {Один контакт} other {# контакты}} для этого объявления."
+      ua: "{contacts, plural, =0 {Без контакту} one {Один контакт} other {# контакти}} для цього оголошення."

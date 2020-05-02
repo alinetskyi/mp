@@ -12,107 +12,179 @@ form:
           one {Un caractère restant}
           other {# caractères restants}
       }
+    ru: |
+      {characters_remaining, plural,
+          =0 {Не осталось символов}
+          one {Доступен один символ}
+          other {# доступно символов}
+      }
+    ua: |
+      {characters_remaining, plural,
+          =0 {Не залишилось символів}
+          one {Доступний один символ}
+          other {# доступно символів}
+      }
   validation_code_placeholder:
     en: Validation code
     fr: Code de validation
+    ru: Код проверки
+    ua: Код перевірки
     context: Can be used in many contexts such as phone or transaction validation.
   slider_helper:
     en: Slide to adjust
     fr: Glisser pour modifier
+    ru: Перетащите для изменения
+    ua: Перетягніть для зміни
     context: Helps user using slider to set values in forms.
   date_placeholder:
     en: Date
     fr: Date
+    ru: Дата
+    ua: Дата
   tags_label:
     en: Tags
     fr: Mots-clés
+    ru: Теги
+    ua: Теги
   search:
     placeholder:
       en: Search
       fr: Rechercher
+      ru: Поиск
+      ua: Пошук
       context: Generic search placeholder (user or asset filter forms)
     query_placeholder:
       en: You’re looking for…
       fr: "Que recherchez-vous\_?"
+      ru: Вы ищете…
+      ua: Ви шукаєте…
       context: More enticing than generic placeholder
     near_location_placeholder:
       en: Near…
       fr: À proximité de…
+      ru: Возле…
+      ua: Біля…
     search_types_filter:
       en: Search type
       fr: Type de recherche
+      ru: Тип поиска
+      ua: Тип пошуку
     reset_search_results:
       en: Reset your search parameters
       fr: Réinitialiser vos paramètres de recherche
+      ru: Сброс параметров поиска
+      ua: Скидання параметрів пошуку
     filters:
       en: Filters
       fr: Filtres
+      ru: Фильтры
+      ua: Фільтри
     features_label:
       en: Features
       fr: Caractéristiques
+      ru: Функции
+      ua: Функції
     minimum_price:
       en: Min
       fr: Minimum
+      ru: Минимум
+      ua: Мінімум
     maximum_price:
       en: Max
       fr: Maximum
+      ru: Максимум
+      ua: Максимум
     sort:
       en: Sort
       fr: Trier
+      ru: Сортировать
+      ua: Сортувати
     default_sorting:
       en: Default
       fr: Par défaut
+      ru: По умолчанию
+      ua: За замовчуванням
     modes:
       default:
         en: Offers
         fr: Offres
+        ru: Предложения
+        ua: Пропозиції
         context: Default search mode, generally “offers” as opposed to “requests” or submissions
       reversed:
         en: Requests
         fr: Demandes
+        ru: Запросы
+        ua: Запити
         context: Reversed search mode, generally “requests” as opposed to “offers”
   error:
     missing_field:
       en: Required field
       fr: Champ requis
+      ru: Обязательное поле
+      ua: Обов'язкове поле
       context: Vocabulary is specific to form (fields).
     missing_information:
       en: Missing information
       fr: Information manquante
+      ru: Недостающая информация
+      ua: Відсутня інформація
       context: Can be showed when some parts of form has not been filled in.
     missing_title:
       en: Required title
       fr: Titre requis
+      ru: Обязательный заголовок
+      ua: Обов'язковий заголовок
     missing_price:
       en: Missing price
       fr: Prix manquant
+      ru: Отсутствует цена
+      ua: Відсутня ціна
     missing_description:
       en: Required description
       fr: Description requise
+      ru: Обязательное описание
+      ua: Обов’язковий опис
     missing_image:
       en: Missing picture
       fr: Photographie manquante
+      ru: Отсутствует картинка
+      ua: Відсутня картинка
     missing_place:
       en: Place required
       fr: Lieu requis
+      ru: Местонахождение обязательное
+      ua: Місцезнаходження обов'язкове
     missing_email:
       en: Missing email address
       fr: Adresse email manquante
+      ru: Отсутствующий адрес электронной почты
+      ua: Відсутня електронна адреса
     missing_phone:
       en: Missing phone number
       fr: Numéro de téléphone manquant
+      ru: Отсутствующий номер телефона
+      ua: Відсутній номер телефону
     missing_tax_id:
       en: Missing tax ID
       fr: Numéro de TVA manquant
+      ru: Отсутствующий номер НДС
+      ua: Відсутній номер ПДВ
     missing_comment:
       en: Please leave a comment
       fr: Merci de renseigner un commentaire
+      ru: Пожалуйста, оставьте комментарий
+      ua: Будь ласка, залиште коментар
     missing_banking_details:
       en: Banking details required
       fr: Informations bancaires requises
+      ru: Банковские реквизиты обязательные
+      ua: Банківські реквізити обов'язкові
     min_characters:
-      fr: "{min_number_of_characters, plural, one {Ce champ ne peut pas être vide.} other {# caractères minimum}}"
       en: "{min_number_of_characters, plural, one {This can’t be empty.} other {Minimum # characters}}"
+      fr: "{min_number_of_characters, plural, one {Ce champ ne peut pas être vide.} other {# caractères minimum}}"
+      ru: "{min_number_of_characters, plural, one {Это поле не может быть пустым.} other {# минимум символов}}"
+      ua: "{min_number_of_characters, plural, one {Це поле не може бути порожнім.} other {# мінімум символів}}"
     characters_exceeding:
       en: |
         {characters_exceeding, plural,
@@ -125,4 +197,16 @@ form:
             =0 {Aucun caractère restant}
             one {Un caractère en trop}
             other {# caractères en trop}
+        }
+      ru: |
+        {characters_remaining, plural,
+            =0 {Не осталось символов}
+            one {Один символ лишний}
+            other {# лишних символов}
+        }
+      ua: |
+        {characters_remaining, plural,
+            =0 {Не залишилось символів}
+            one {Один символ зайвий}
+            other {# зайвих символівв}
         }

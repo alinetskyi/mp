@@ -2,6 +2,10 @@ navigation:
   terms:
     en: Terms of Use
     fr: Conditions Générales d’Utilisation
+    ru: Условия использования
+    ua: Умови користування
   github_button:
     en: Fork me on Github
     fr: Créez un fork Github
+    ru: Форкани меня на Github
+    ua: Форкани мене на Github

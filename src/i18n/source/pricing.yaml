@@ -2,12 +2,18 @@ pricing:
   price_with_currency:
     en: "{price, number, currency}"
     fr: "{price, number, currency}"
+    ru: "{price, number, currency}"
+    ua: "{price, number, currency}"
   price_label:
     en: Price
     fr: Prix
+    ru: Цена
+    ua: Ціна
   asking_price_label:
     en: Asking price
     fr: Prix demandé
+    ru: Запрашиваемая цена
+    ua: Запитувана ціна
     context: When price can be requested by user rather than set by provider. E.g. salary expectations
   asking_price:
     en: >-
@@ -34,13 +40,41 @@ pricing:
           other{}
         }}
       }
+    ru: >-
+      Запрашиваемая цена{price, select,
+        undefined{}
+        other{: {price, number, currency} {timeUnit, select,
+          м{/ m}
+          д{/ d}
+          н{/ night}
+          ч{/ h}
+          мин{/ min}
+          other{}
+        }}
+      }
+    ua: >-
+      Запитувана ціна{price, select,
+        undefined{}
+        other{: {price, number, currency} {timeUnit, select,
+          м{/ m}
+          д{/ d}
+          н{/ night}
+          г{/ h}
+          хв{/ min}
+          other{}
+        }}
+      }
     context: This price can be requested by user, like salary expectations
   price_range:
     en: From {lower_price, number, currency} to {upper_price, number, currency}
     fr: De {lower_price, number, currency} à {upper_price, number, currency}
+    ru: От {lower_price, number, currency} до {upper_price, number, currency}
+    ua: Від {lower_price, number, currency} до {upper_price, number, currency}
   price_range_short:
     en: "{lower_price, number, currency} - {upper_price, number, currency}"
     fr: "{lower_price, number, currency} - {upper_price, number, currency}"
+    ru: "{lower_price, number, currency} - {upper_price, number, currency}"
+    ua: "{lower_price, number, currency} - {upper_price, number, currency}"
   price_per_time_unit_short_label:
     en: |
       {price, select, undefined {Price} other {{price, number, currency}} }
@@ -62,6 +96,26 @@ pricing:
         m{/ min}
         other{}
       }
+    ru: |
+      {price, select, undefined {Цена} other {{price, number, currency}} }
+      {timeUnit, select,
+        м{/ m}
+        д{/ d}
+        н{/ night}
+        ч{/ h}
+        мин{/ min}
+        other{}
+      }
+    ua: |
+      {price, select, undefined {Ціна} other {{price, number, currency}} }
+      {timeUnit, select,
+        м{/ m}
+        д{/ d}
+        н{/ night}
+        г{/ h}
+        хв{/ min}
+        other{}
+      }
   price_per_time_unit_label:
     en: |
       {price, select, undefined {Price} other {{price, number, currency}} }
@@ -81,6 +135,26 @@ pricing:
         n{par nuit}
         h{par heure}
         m{par minute}
+        other{}
+      }
+    ru: |
+      {price, select, undefined {Цена} other {{price, number, currency}} }
+      {timeUnit, select,
+        м{в месяц}
+        д{в день}
+        н{за ночь}
+        ч{в час}
+        мин{в минуту}
+        other{}
+      }
+    ua: |
+      {price, select, undefined {Ціна} other {{price, number, currency}} }
+      {timeUnit, select,
+        м{за місяць}
+        д{за день}
+        н{за ніч}
+        г{за годину}
+        хв{за хвилину}
         other{}
       }
   price_per_time_unit_label_tax_excluded:
@@ -106,24 +180,60 @@ pricing:
         m{par minute}
         other{}
       }
+    ru: |
+      {price, select, undefined {Цена} other {{price, number, currency}} }
+      (без налога)
+      {timeUnit, select,
+        м{в месяц}
+        д{в день}
+        н{за ночь}
+        ч{в час}
+        мин{в минуту}
+        other{}
+      }
+    ua: |
+      {price, select, undefined {Ціна} other {{price, number, currency}} }
+      (без податку)
+      {timeUnit, select,
+        м{за місяць}
+        д{за день}
+        н{за ніч}
+        г{за годину}
+        хв{за хвилину}
+        other{}
+      }
   tax_excluded:
     en: Tax excluded
     fr: HT
+    ru: Без налога
+    ua: Без податку
   service_fees:
     en: Service fees
     fr: Frais de service
+    ru: Плата за сервис
+    ua: Плата за обслуговування
   free:
     en: Free
     fr: Gratuit
+    ru: Бесплатно
+    ua: Безкоштовно
   total:
     en: Total
     fr: Total
+    ru: Всего
+    ua: Всього
   quantity:
     en: Quantity
     fr: Quantité
+    ru: Количество
+    ua: Кількість
   subscription_header:
     en: Pricing
     fr: Tarifs
+    ru: Расценки
+    ua: Розцінки
   subscription_subheader:
     en: Premium offers for advanced users.
     fr: Nos offres payantes s’adressent aux utilisateurs avancés.
+    ru: Наши платные предложения ориентированы на опытных пользователей.
+    ua: Наші платні пропозиції орієнтовані на досвідчених користувачів.

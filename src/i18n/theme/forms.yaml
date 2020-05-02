@@ -4,12 +4,18 @@ form:
       default:
         en: All
         fr: Tous
+        ru: Все
+        ua: Все
         context: Default search mode, generally “offers” as opposed to “requests” or submissions
       renting:
         en: Renting
         fr: Location
+        ru: Аренда
+        ua: Оренда
         context: Renting search mode
       selling:
         en: Selling
         fr: Vente
+        ru: Продажа
+        ua: Продаж
         context: Selling search mode

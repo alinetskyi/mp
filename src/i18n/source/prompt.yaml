@@ -3,137 +3,219 @@ prompt:
   continue_button:
     en: Continue
     fr: Continuer
+    ru: Продолжить
+    ua: Продовжити
     context: Used in any context where a multi-step process is pending user action.
   confirm_button:
     en: Confirm
     fr: Confirmer
+    ru: Подтвердить
+    ua: Підтвердити
     context: Prompt user to complete ongoing process or confirm input.
   save_button:
     en: Save
     fr: Enregistrer
+    ru: Сохранить
+    ua: Зберегти
     context: General purpose button to save new content or setting.
   cancel_button:
     en: Cancel
     fr: Annuler
+    ru: Отмена
+    ua: Скасувати
   reset_button:
     en: Reset
     fr: Réinitialiser
+    ru: Сброс
+    ua: Скидання
   archive_button:
     en: Archive
     fr: Archiver
+    ru: Архивировать
+    ua: Архівувати
   delete_button:
     en: Delete
     fr: Supprimer
+    ru: Удалить
+    ua: Видалити
   send_button:
     en: Send
     fr: Envoyer
+    ru: Отправить
+    ua: Надіслати
   later_button:
     en: Later
     fr: Plus tard
+    ru: Потом
+    ua: Пізніше
     context: User can postpone an action with this button.
   confirm_delete:
     en: Do you confirm the deletion?
     fr: Confirmez-vous la suppression ?
+    ru: Вы подтверждаете удаление?
+    ua: Ви підтверджуєте видалення?
   binary_yes:
     en: "Yes"
     fr: "Oui"
+    ru: "Да"
+    ua: "Так"
   binary_no:
     en: "No"
     fr: "Non"
+    ru: "Нет"
+    ua: "Ні"
   binary_or_separator:
     en: Or
     fr: Ou
+    ru: Или
+    ua: Або
     context: Introduces an alternative such as another login option.
   select:
     en: Select
     fr: Sélectionner
+    ru: Выбрать
+    ua: Вибрати
   browse:
     en: Browse
     fr: Parcourir
+    ru: Просматривать
+    ua: Переглядати
     context: Applies to file inputs.
   select_all_button:
     en: Select all
     fr: Tout sélectionner
+    ru: Выбрать все
+    ua: Вибрати все
   deselect_all_button:
     en: Deselect all
     fr: Vider la sélection
+    ru: Убрать выделение
+    ua: Скасувати виділення
   mark_as_read_button:
     en: Mark as read
     fr: Marquer comme lu
+    ru: Пометить, как прочитанное
+    ua: Відзначити як прочитане
   archive_to_inbox_button:
     en: Send to inbox
     fr: Restaurer
+    ru: Отправить в входные
+    ua: Відправити у вхідні
     context: Restoring from archived status.
   restore_button:
     en: Restore
     fr: Restaurer
+    ru: Восстановить
+    ua: Відновити
   upload_attachments_button:
     en: Upload attachments
     fr: Envoyer des pièces-jointes
+    ru: Загрузить вложения
+    ua: Завантажити вкладення
   archives:
     en: Archives
     fr: Archives
+    ru: Архивы
+    ua: Архіви
     context: Can be used to reveal advanced options to expose archived resources
   click_here:
     en: Click here
     fr: Cliquez ici
+    ru: Нажмите здесь
+    ua: Натисніть тут
   see_more:
     en: See more
     fr: En voir plus
+    ru: Узнать больше
+    ua: Дізнатися більше
   verify:
     en: Verify
     fr: Vérifier
+    ru: Проверить
+    ua: Перевірити
   validate:
     en: Validate
     fr: Valider
+    ru: Подтвердить
+    ua: Підтвердити
   hide:
     en: Hide
     fr: Masquer
+    ru: Спрятать
+    ua: Сховати
   details:
     en: Details
     fr: Détail
+    ru: Подробности
+    ua: Деталі
   generic_add_button:
     en: Add
     fr: Ajouter
+    ru: Добавить
+    ua: Додати
   create_button:
     en: Create
     fr: Créer
+    ru: Создать
+    ua: Створити
     context: Used for any type of resource (contact, asset, content…)
   login_to_know_more:
     en: Login to know more.
     fr: Connectez-vous pour en savoir plus.
+    ru: Войдите, чтобы узнать больше.
+    ua: Увійдіть, щоб дізнатися більше.
   drag_change_picture_order:
     en: Drag to change picture order
     fr: Faites glisser les images pour changer leur ordre
+    ru: Перетащите, чтобы изменить порядок изображений
+    ua: Перетягніть, щоб змінити порядок зображень
   add_pictures:
     en: Add pictures
     fr: Ajouter des images
+    ru: Добавить изображения
+    ua: Додати зображення
   edit_pictures:
     en: Edit pictures
     fr: Modifier les images
+    ru: Редактировать изображения
+    ua: Редагувати зображення
   remove_pictures:
     en: Remove pictures
     fr: Supprimer des images
+    ru: Удалить изображения
+    ua: Видалити зображення
   drag_and_drop_pictures:
     en: Drag and drop your pictures
     fr: Glissez-déposez vos images
+    ru: Перетащите свои изображения
+    ua: Перетягніть свої зображення
   set_asset_availability:
     en: Set availability
     fr: Définir les disponibilités
+    ru: Установить наличие
+    ua: Встановити наявність
   my_availability:
     en: My availability
     fr: Mes disponibilités
+    ru: Моя доступность
+    ua: Моя доступність
     context: General user’s availability, in contrast to single asset’s availability
   service_update:
     available:
       en: "{SERVICE_NAME} Update"
       fr: "Mise à jour {SERVICE_NAME}"
+      ru: "{SERVICE_NAME} Обновление"
+      ua: "{SERVICE_NAME} Оновити"
       context: New version of the website / app is available.
     refresh_helper:
       en: "{SERVICE_NAME} has just been updated, you can refresh your page to enjoy."
       fr: "{SERVICE_NAME} vient d’être mis à jour. Rafraîchissez votre page pour en profiter."
+      ru: "{SERVICE_NAME} недавно обновлен, Вы можете обновить страницу, для корисування."
+      ua: "{SERVICE_NAME} нещодавно оновлено, Ви можете оновити сторінку, для корисування."
       context: New version of the website / app is available.
     refresh_button:
       en: Update
       fr: Mettre à jour
+      ru: Обновить
+      ua: Оновити
       context: User may lose current content in the process.
