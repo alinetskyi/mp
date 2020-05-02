@@ -354,7 +354,7 @@ export default {
                     class="text-grey-8 q-gutter-xs"
                     @click.stop.prevent
                   >
-                    <QBtn
+                    <!-- <QBtn
                       v-if="!props.row.archived"
                       flat
                       dense
@@ -363,8 +363,8 @@ export default {
                       size="12px"
                       :icon="icons.matArchive"
                       @click="archive(props.row.id)"
-                    />
-                    <QBtn
+                    /> -->
+                    <!-- <QBtn
                       v-if="!props.row.read"
                       flat
                       dense
@@ -393,7 +393,7 @@ export default {
                             </QItemSection>
                             <QItemSection>{{ $t({ id: 'prompt.archive_to_inbox_button'}) }}</QItemSection>
                           </QItem>
-                          <!-- Still show these on bigger screens as icon labels -->
+                          Still show these on bigger screens as icon labels
                           <QItem
                             v-if="!props.row.archived"
                             clickable
@@ -416,7 +416,7 @@ export default {
                           </QItem>
                         </QList>
                       </q-menu>
-                    </QBtn>
+                    </QBtn> -->
                   </div>
                 </QItemSection>
               </QItem>

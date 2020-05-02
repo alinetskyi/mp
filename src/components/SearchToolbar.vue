@@ -395,7 +395,7 @@ export default {
             @changeEndDate="endDate => setDates({ endDate })"
           />
 
-          <div class="row q-my-lg q-py-md justify-center">
+          <!-- <div class="row q-my-lg q-py-md justify-center">
             <SelectCategories
               class="col-12 col-sm-5"
               popup-content-class="search-filters__categories"
@@ -404,7 +404,7 @@ export default {
               :initial-category="currentCategory"
               @change="selectCategory"
             />
-          </div>
+          </div> -->
 
           <div
             v-if="displayCustomAttributes.length"

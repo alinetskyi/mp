@@ -55,6 +55,26 @@ export default {
           Français
         </QItemSection>
       </QItem>
+      <QItem
+        v-close-popup
+        class="text-center"
+        clickable
+        @click="switchLang('ru')"
+      >
+        <QItemSection :class="['text-center', content.locale === 'ru' ? 'text-weight-bold' : '']">
+          Русский
+        </QItemSection>
+      </QItem>
+      <QItem
+        v-close-popup
+        class="text-center"
+        clickable
+        @click="switchLang('ua')"
+      >
+        <QItemSection :class="['text-center', content.locale === 'ua' ? 'text-weight-bold' : '']">
+          Українська
+        </QItemSection>
+      </QItem>
     </QList>
   </QBtnDropdown>
 </template>

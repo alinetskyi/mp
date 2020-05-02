@@ -333,22 +333,11 @@ export default {
           :icon-button-action="searchAssets"
           dense
           icon-color="primary"
-          search-icon-position="left"
+          search-icon-position="none"
           @change="selectCategory"
         />
-        <PlacesAutocomplete
-          class="gt-sm"
-          :label="$t({ id: 'form.search.near_location_placeholder' })"
-          :hide-input-on-select="true"
-          icon-color="grey-4"
-          search-icon-position="left"
-          read-search-store
-          prompt-current-position
-          dense
-          @selectPlace="selectPlace"
-        />
 
-        <AppInputNumber
+        <!-- <AppInputNumber
           :value="maximumPrice"
           :label="$t({ id: 'form.search.maximum_price' })"
           class="gt-md"
@@ -370,9 +359,24 @@ export default {
               @click="resetMaxPrice"
             />
           </template>
-        </AppInputNumber>
+        </AppInputNumber> -->
       </div>
-
+      <div
+        v-show="!isHome && !isMenuOpened"
+        class="header__search-bar row no-wrap shadow-2 q-px-sm q-mx-lg"
+      >
+        <PlacesAutocomplete
+          class="gt-sm"
+          :label="$t({ id: 'form.search.near_location_placeholder' })"
+          :hide-input-on-select="true"
+          icon-color="grey-4"
+          search-icon-position="left"
+          read-search-store
+          prompt-current-position
+          dense
+          @selectPlace="selectPlace"
+        />
+      </div>
       <QSpace />
 
       <QBtn
