@@ -27,6 +27,8 @@ let existingData
 let createdData
 
 async function run () {
+  await ssoSetup()
+
   existingData = await pProps({
     assets: stelace.assets.list({ nbResultsPerPage: 100 }),
     assetTypes: stelace.assetTypes.list({ nbResultsPerPage: 100 }),
@@ -430,6 +432,24 @@ async function run () {
   }
 }
 
+async function ssoSetup () {
+  await stelace.config.updatePrivate({
+    stelace: {
+      ssoConnections: {
+        facebook: {
+          active: true,
+          protocol: 'oauth2',
+          // You get these when creating your Github OAuth app
+          // https://github.com/settings/applications/new
+          clientId: '544094162969296',
+          clientSecret: 'b6c8e3c502b2072b653444b9725b5501',
+          // Your users will be redirected to this URL after login
+          afterAuthenticationUrl: 'https://marketplace.demo.stelace.com'
+        }
+      }
+    }
+  })
+}
 async function removeUsers () {
   for (let i = 0; i < existingData.users.length; i++) {
     const user = existingData.users[i]
